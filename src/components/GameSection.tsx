@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Gamepad2, Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import gameBg from "@/assets/new-game-bg.jpg";
+import gameBg from "@/assets/bg_bikini_bottom.jpg";
 
 const GameSection = () => {
     const { t } = useTranslation();

@@ -54,15 +54,14 @@ const BikiniBottomSection = () => {
   return (
     <>
       {/* Fixed Full-Screen Background */}
-      <div
-        className="fixed inset-0 w-full h-full z-[-1] transition-opacity duration-1000"
-        style={{
-          backgroundImage: bgImage ? `url(${bgImage})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
+      <div className="fixed inset-0 w-full h-full z-[-1] bg-black/20">
+        {bgImage && (
+          <img 
+            src={bgImage} 
+            alt="Bikini Bottom Background" 
+            className="absolute inset-0 w-full h-full object-cover animate-fade-in transition-opacity duration-1000"
+          />
+        )}
         {/* Dark overlay to ensure text readability against the varied backgrounds */}
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
 

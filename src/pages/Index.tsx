@@ -33,8 +33,8 @@ const Index = () => {
 
   const floatingPos = useMemo(() => {
     return navItems.map((_, i) => ({
-      // Stagger vertically: evens top (20%), odds bottom (35%)
-      top: `${20 + (i % 2 === 0 ? 0 : 15) + Math.random() * 5}%`, 
+      // Stagger vertically: evens top (15%), odds bottom (28%)
+      top: `${15 + (i % 2 === 0 ? 0 : 13) + Math.random() * 5}%`, 
       // Stagger horizontally: 5%, 17%, 29%, 41%, 53% to prevent early collisions
       left: `${5 + (i * 12) + Math.random() * 5}%`, 
       delay: (Math.random() * 10) * -1,

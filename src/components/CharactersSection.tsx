@@ -871,7 +871,7 @@ const CharactersSection = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-black/10"></div>
       </div>
 
       <section className="animate-fade-in-up relative z-10 w-full pt-4">

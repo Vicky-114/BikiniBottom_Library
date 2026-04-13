@@ -135,7 +135,7 @@ function BubbleTransition() {
       {bubbles.map((b) => (
         <div 
           key={b.id}
-          className="absolute bg-sky-100/10 border-[2px] md:border-[4px] border-[#38bdf8] rounded-full shadow-[inset_-6px_-6px_15px_rgba(14,165,233,0.4),_inset_4px_4px_10px_rgba(255,255,255,0.6)] backdrop-blur-[1px]"
+          className="absolute bg-sky-100/10 border-[2px] md:border-[4px] border-[#38bdf8] rounded-full shadow-[inset_-6px_-6px_15px_rgba(14,165,233,0.4),_inset_4px_4px_10px_rgba(255,255,255,0.6)]"
           style={{
             left: `${b.x}vw`,
             bottom: `-25vh`, // start below the screen

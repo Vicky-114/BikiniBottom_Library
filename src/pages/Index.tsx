@@ -193,7 +193,7 @@ const Index = () => {
                       {t('nav.menu')}
                     </button>
                   {isMenuOpen && (
-                    <div className="absolute mt-2 left-0 w-48 md:w-56 border-2 border-primary rounded-xl bg-white/70 backdrop-blur-md shadow-lg overflow-visible">
+                    <div className="absolute mt-2 left-0 min-w-max border-2 border-primary rounded-xl bg-white/70 backdrop-blur-md shadow-lg overflow-visible">
                       <nav className="flex flex-col">
                         {navItems.map((item) => (
                           <div key={item.id} className="relative group w-full">
@@ -202,9 +202,9 @@ const Index = () => {
                                 setActiveSection(item.id);
                                 setIsMenuOpen(false);
                               }}
-                              className={`w-full px-4 py-3 font-display flex items-center gap-3 text-sm transition-colors border-b last:border-b-0 border-primary/20 hover:bg-primary/10 text-[#002f5a] ${activeSection === item.id ? "bg-primary/20 font-bold" : ""}`}
+                              className={`w-full px-5 py-3 whitespace-nowrap font-display flex items-center gap-4 text-sm md:text-base transition-colors border-b last:border-b-0 border-primary/20 hover:bg-primary/10 text-[#002f5a] ${activeSection === item.id ? "bg-primary/20 font-bold" : ""}`}
                             >
-                              <img src={item.image} alt={item.id} className="w-5 h-5 object-contain" />
+                              <img src={item.image} alt={item.id} className="w-[25px] h-[25px] object-contain" />
                               {item.shortLabel}
                             </button>
                             {/* Tooltip visible on hover */}

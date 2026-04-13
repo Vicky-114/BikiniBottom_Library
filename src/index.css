@@ -288,11 +288,11 @@
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-.animate-drift-1 { animation: drift-random-1 8s ease-in-out infinite; }
-.animate-drift-2 { animation: drift-random-2 9s ease-in-out infinite; }
-.animate-drift-3 { animation: drift-random-3 10s ease-in-out infinite; }
-.animate-drift-4 { animation: drift-random-1 8.5s ease-in-out infinite reverse; }
-.animate-drift-5 { animation: drift-random-2 9.5s ease-in-out infinite reverse; }
+.animate-drift-1 { animation: drift-random-1 4s ease-in-out infinite; }
+.animate-drift-2 { animation: drift-random-2 4.5s ease-in-out infinite; }
+.animate-drift-3 { animation: drift-random-3 5s ease-in-out infinite; }
+.animate-drift-4 { animation: drift-random-1 4.25s ease-in-out infinite reverse; }
+.animate-drift-5 { animation: drift-random-2 4.75s ease-in-out infinite reverse; }
 
 @keyframes popBubble {
   0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }

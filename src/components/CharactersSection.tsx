@@ -137,6 +137,8 @@ const CharactersSection = () => {
       personality: "Mr. Krabs's teenage daughter who loves shopping and pop music. Biologically, she's a massive marine mammal, which humorously contrasts with her tiny crab father.",
       image: "https://media.tenor.com/yFv6lR08yVMAAAAi/pearl-krabs.gif",
       color: "border-pink-400",
+      symbolism: "Superficial Consumerism / Generational Disconnect",
+      symbolismDesc: "Represents the intense materialistic drive instilled by her father's capitalism, yet fundamentally highlighting the tragic disconnect and pressures of adolescent social conformity.",
     },
     {
             name: "Mrs. Puff",
@@ -313,6 +315,8 @@ const CharactersSection = () => {
       personality: "An overweight, nitpicky, and arrogant fast-food critic. He infamously hid the pickles under his tongue to sabotage SpongeBob's fry cook reputation.",
       image: "https://media.tenor.com/dOi172Kvhp0AAAAC/crying-bubble-bass.gif",
       color: "border-olive-500",
+      symbolism: "Internet Cynicism / The Malicious Critic",
+      symbolismDesc: "The embodiment of the incredibly entitled, hyper-critical consumer—using pedantry (hidden pickles) to manipulate and destroy the honest labor of the working class.",
     },
     {
             name: "Kevin C. Cucumber",
@@ -323,6 +327,8 @@ const CharactersSection = () => {
       personality: "The snobby leader of the Jellyspotters jellyfishing club. He wears a crown and acts incredibly elitist towards SpongeBob.",
       image: "https://media.tenor.com/r5JFzNjE8N4AAAAC/kevin-c-cucumber-spongebob.gif",
       color: "border-green-600",
+      symbolism: "False Idolatry / The Cult of Personality",
+      symbolismDesc: "Demonstrates the cruelty that lies behind celebrity worship, using status strictly to manipulate and mentally destroy his most devoted followers.",
     },
     {
             name: "David Hasselhoff",
@@ -333,6 +339,8 @@ const CharactersSection = () => {
       personality: "The actual actor, appearing in real life during the SpongeBob SquarePants Movie to act as a speedboat, propelling SpongeBob and Patrick back to Bikini Bottom.",
       image: "https://media.tenor.com/pnS3RIa1leIAAAAC/david-hasselhoff-pecs.gif",
       color: "border-red-300",
+      symbolism: "Deus Ex Machina / The Mythic Savior",
+      symbolismDesc: "A literal god-like entity appearing physically from another dimension (live action) to solve impossible obstacles with terrifying human anatomy.",
     },
     {
             name: "SpongeGar",
@@ -343,6 +351,8 @@ const CharactersSection = () => {
       personality: "SpongeBob's caveman ancestor who discovered fire. He communicates only in grunts and primitive language.",
       image: "https://media.tenor.com/CgUsa4JJtrkAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-orange-500",
+      symbolism: "Primal Instinct / The State of Nature",
+      symbolismDesc: "A representation of Hobbesian humanity—base instincts, chaos, and the primal discovery of fire that sparked both evolution and inevitable destruction.",
     },
     {
             name: "Stanley S. SquarePants",
@@ -353,6 +363,8 @@ const CharactersSection = () => {
       personality: "SpongeBob's accident-prone cousin. Unlike SpongeBob, he destroys anything he touches, from cameras to Krabby Patties.",
       image: "https://media.tenor.com/2Ekd1OjkNmgAAAAC/spongebob-stanley-s-squarepants.gif",
       color: "border-gray-400",
+      symbolism: "Destructive Incompetence",
+      symbolismDesc: "The walking manifestation of entropy, destroying everything he touches regardless of intention, showing that pure innocence can still yield chaotic malice.",
     },
     {
             name: "Grandpa Redbeard",
@@ -363,6 +375,8 @@ const CharactersSection = () => {
       personality: "Mr. Krabs's tough, pirate grandfather who expected Eugene to carry on the family tradition of piracy, only to learn that capitalist restaurant pricing is the modern form of thievery.",
       image: "https://media.tenor.com/4Wnig_9WkYMAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-red-700",
+      symbolism: "The Weight of Ancestral Expectation",
+      symbolismDesc: "Emphasizes the burden of inherited legacy and the terrifying lengths capitalism forces individuals to go to hide their true, unglamorous careers from their forebears.",
     },
     {
             name: "Red Mist Squidward",
@@ -373,6 +387,8 @@ const CharactersSection = () => {
       personality: "A legendary internet creepypasta involving an alleged lost episode where Squidward descended into madness. The show's creators actually acknowledged the meme by hiding a frame of it in the show.",
       image: "https://media.tenor.com/0Ql4irBFLPAAAAAC/red-mist.gif",
       color: "border-red-800",
+      symbolism: "Nihilistic Void / The Creepypasta Metanarrative",
+      symbolismDesc: "Represents the ultimate descent into existential despair when artistic meaning is entirely lost, bridging fan-lore horror with the character’s intrinsic tragedy.",
     },
     {
             name: "Jack Kahuna Laguna",
@@ -383,6 +399,8 @@ const CharactersSection = () => {
       personality: "A legendary surfer who rides the biggest waves. He has long blonde hair and approaches surfing like a spiritual philosophy.",
       image: "https://media.tenor.com/W-JKVxiuuHYAAAAC/monyetpisanggoreng.gif",
       color: "border-yellow-400",
+      symbolism: "Zen Absurdism / The Surfer Mysticism",
+      symbolismDesc: "A spiritual guru trapped within the limits of extreme sports, teaching that enlightenment is found in the heart of the ultimate wave.",
     },
     {
             name: "Giant Eel",
@@ -393,6 +411,8 @@ const CharactersSection = () => {
       personality: "A massive, terrifying deep-sea creature that preys on smaller fish in the dark trenches surrounding Bikini Bottom.",
       image: "https://media.tenor.com/Srmzm7DDMwsAAAAC/i%27m-a-big-fan-moray-eel.gif",
       color: "border-gray-600",
+      symbolism: "The Sublime / Unfathomable Terror",
+      symbolismDesc: "A Lovecraftian force of nature living in the deep abyss of the ocean, indifferent to the petty squabbles of Bikini Bottom citizens.",
     },
     {
             name: "Princess Mindy",
@@ -403,6 +423,8 @@ const CharactersSection = () => {
       personality: "King Neptune's kind-hearted daughter who believes in SpongeBob and Patrick's bravery during their quest to Shell City.",
       image: "https://media.tenor.com/eiB-1QYvu0kAAAAC/patrick-star-spongebob.gif",
       color: "border-pink-300",
+      symbolism: "Benevolent Moral Barometer",
+      symbolismDesc: "The only voice of compassion within an autocratic regime, replacing her father's tyranny with an empathetic utilization of mermaid magic.",
     },
     {
             name: "Victor Krabs",
@@ -413,6 +435,8 @@ const CharactersSection = () => {
       personality: "Mr. Krabs's stern father who gifted him a rusty penny, instilling in Eugene his lifelong obsession with money.",
       image: "https://media.tenor.com/zytLw52gsngAAAAC/spongebob-mr-krabs.gif",
       color: "border-yellow-600",
+      symbolism: "The Genesis of Greed",
+      symbolismDesc: "The root cause of Mr. Krabs’s obsessive wealth hoarding, demonstrating how generational trauma is inherited through financial hardship.",
     },
     {
             name: "Queen Jellyfish",
@@ -423,6 +447,8 @@ const CharactersSection = () => {
       personality: "The massive, monarchical leader of the jellyfish in Jellyfish Fields. She wields immense power over the swarms.",
       image: "https://media.tenor.com/buOdVaNDBfoAAAAC/kissy-face-spongebob.gif",
       color: "border-pink-500",
+      symbolism: "Matriarchal Hive Mind",
+      symbolismDesc: "The protective, massive center of an electricity-generating ecosystem defending her swarm from capitalist exploitation.",
     },
     {
             name: "Anchovies",
@@ -433,6 +459,8 @@ const CharactersSection = () => {
       personality: "A massive, chaotic swarm of tiny fish that communicate strictly through the word 'meep' and overrun businesses as a collective hive.",
       image: "https://media.tenor.com/suRsIyzeR3UAAAAC/spongebob-anchovies.gif",
       color: "border-blue-200",
+      symbolism: "The Consuming Swarm / Mob Mentality",
+      symbolismDesc: "Individually insignificant but collectively terrifying, representing the ravenous, mindless consumption of the masses under capitalistic hunger.",
     },
     {
             name: "Master Udon",
@@ -443,6 +471,8 @@ const CharactersSection = () => {
       personality: "A muscular martial artist and real estate scammer who operates a shady timeshare business disguised as karate island.",
       image: "https://media.tenor.com/wgAHFIC4GEUAAAAC/shibada-spongebob.gif",
       color: "border-gray-500",
+      symbolism: "Predatory Real Estate / The Martial Illusion",
+      symbolismDesc: "Exposes how mystical spiritualism is frequently co-opted as a front to execute aggressive financial scams and timeshare traps.",
     },
     {
             name: "Sea Bear",
@@ -453,6 +483,8 @@ const CharactersSection = () => {
       personality: "A fearsome wilderness predator possessing elements of a bear and a fish. It attacks anyone who violates absurd rules like wearing a sombrero upside down.",
       image: "https://media.tenor.com/zLEmQ2AYTg4AAAAC/seabear-spongebob.gif",
       color: "border-amber-700",
+      symbolism: "Arbitrary Cosmic Punishment",
+      symbolismDesc: "A primal beast whose attacks are governed by utterly absurd, nonsensical rules, reflecting the cruel randomness of nature's wrath.",
     },
     {
             name: "Sea Rhinoceros",
@@ -463,6 +495,8 @@ const CharactersSection = () => {
       personality: "An even deadlier predator than the Sea Bear, deterred only by wearing anti-Sea Rhinoceros undergarments.",
       image: "https://media.tenor.com/mRihot_c0WMAAAAC/visualries.gif",
       color: "border-slate-500",
+      symbolism: "The Compound Crisis",
+      symbolismDesc: "Represents the escalation of disaster when cosmic punishment (the Sea Bear) worsens exponentially into an apocalyptic scenario.",
     },
     {
             name: "Hans",
@@ -473,6 +507,8 @@ const CharactersSection = () => {
       personality: "A literal live-action human hand that occasionally sweeps down into the cartoon world to grab characters.",
       image: "https://media.tenor.com/oizeGRp6p_4AAAAC/milelumax-mileven.gif",
       color: "border-orange-300",
+      symbolism: "The Hand of the Creator",
+      symbolismDesc: "The literal intervention of the animator breaching the 2D plane, reinforcing the simulation-like absurdity of the cartoon reality.",
     },
     {
             name: "Magic Conch Shell",
@@ -483,6 +519,8 @@ const CharactersSection = () => {
       personality: "A plastic pull-string toy that SpongeBob and Patrick treat as an omniscient deity, following its random 'yes' or 'no' advice to the absolute letter.",
       image: "https://media.tenor.com/5oeQpHNG2gEAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-purple-300",
+      symbolism: "Theocratic Determinism / Blind Faith",
+      symbolismDesc: "Illustrates the surrender of free will to an inanimate, randomized plastic toy as a satirical jab at religious dependency.",
     },
     {
             name: "Squilvia",
@@ -493,6 +531,8 @@ const CharactersSection = () => {
       personality: "A sophisticated octopus whom Squidward falls in love with. They share a snobby demeanor and mutual disdain for SpongeBob.",
       image: "https://media.tenor.com/ZiWc4QZR2dAAAAAC/nickelodeon-spongebob.gif",
       color: "border-teal-400",
+      symbolism: "The Illusion of Romantic Fulfillment",
+      symbolismDesc: "An anomaly validating Squidward's deepest desires, existing briefly as proof that true connection requires dropping the cynical facade.",
     },
     {
             name: "Mama Krabs",
@@ -503,6 +543,8 @@ const CharactersSection = () => {
       personality: "Eugene's overbearing mother who lives in an anchor-shaped house. Keep an eye on her; she once briefly dated Plankton.",
       image: "https://media.tenor.com/uV3DuRw1fl4AAAAC/spongebob-mama-krabs.gif",
       color: "border-pink-600",
+      symbolism: "The Authoritarian Matriarch",
+      symbolismDesc: "The only force in the universe capable of overriding Mr. Krabs's unyielding greed through sheer psychological authority.",
     },
     {
             name: "Grandma SquarePants",
@@ -526,6 +568,8 @@ const CharactersSection = () => {
       personality: "Harold SquarePants is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/7EdqeuHWWn8AAAAC/spongebob-squarepants.gif",
       color: "border-orange-400",
+      symbolism: "The Oblivious Patriarch",
+      symbolismDesc: "A well-meaning but fundamentally disconnected figure observing the sheer chaos of his son's existence with passive bewilderment.",
     },
     {
             name: "Margaret SquarePants",
@@ -536,6 +580,8 @@ const CharactersSection = () => {
       personality: "Margaret SquarePants is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/I6fKCL_Ck5YAAAAC/sppongebob-squarepants-fun-song-f-is-for-friends-who-do-stuff-together-spongebob-squarepants.gif",
       color: "border-purple-400",
+      symbolism: "Maternal Anxiety",
+      symbolismDesc: "The grounded, worrying anchor helplessly watching her son continuously defy the logic of biological survival.",
     },
     {
             name: "Man Ray",
@@ -546,6 +592,8 @@ const CharactersSection = () => {
       personality: "Man Ray is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/JjMLe8gLmacAAAAC/attack-man-ray.gif",
       color: "border-orange-400",
+      symbolism: "The Paradox of Evil",
+      symbolismDesc: "A pure villain tormented by the introduction of goodness (the Tickle Belt), exploring the struggle between inherent malice and forced rehabilitation.",
     },
     {
             name: "Dirty Bubble",
@@ -556,6 +604,8 @@ const CharactersSection = () => {
       personality: "Dirty Bubble is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/Kg6qo3wsvtQAAAAC/spongebob-squarepants-dirty-bubble.gif",
       color: "border-green-400",
+      symbolism: "The Fragility of Malice",
+      symbolismDesc: "A colossal threat representing pollution and dirt, yet pathetically vulnerable to the sharp point of a simple pencil.",
     },
     {
             name: "Perch Perkins",
@@ -566,6 +616,8 @@ const CharactersSection = () => {
       personality: "Perch Perkins is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/7JfWuyCTUcMAAAAC/beat-up-harvey.gif",
       color: "border-blue-400",
+      symbolism: "Sensationalist Media / The Spectator",
+      symbolismDesc: "Documents the unending chaos of Bikini Bottom with an upbeat delivery, highlighting media normalization of catastrophic events.",
     },
     {
             name: "Old Man Jenkins",
@@ -576,6 +628,8 @@ const CharactersSection = () => {
       personality: "Old Man Jenkins is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/4Wnig_9WkYMAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-red-400",
+      symbolism: "Geriatric Expendability",
+      symbolismDesc: "A constantly abused background figure reflecting society's utter indifference and physical disregard for the elderly.",
     },
     {
             name: "Nat Peterson",
@@ -586,6 +640,8 @@ const CharactersSection = () => {
       personality: "Nat Peterson is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/Ls3_RQNDtFwAAAAC/eatin-chum-eating-chum.gif",
       color: "border-red-400",
+      symbolism: "The Volatile Consumer",
+      symbolismDesc: "The average citizen prone to instantaneous, radical mood swings based entirely on minor inconveniences in commercial service.",
     },
     {
             name: "Tom",
@@ -596,6 +652,8 @@ const CharactersSection = () => {
       personality: "Tom is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/cCDm-oZovDoAAAAC/i-got-music-for-you-tom-kenny.gif",
       color: "border-orange-400",
+      symbolism: "Uncontrollable Urge (Chocolate Guy)",
+      symbolismDesc: "The physical manifestation of obsessive addiction, pursuing his desires with terrifying, manic velocity.",
     },
     {
             name: "Nancy",
@@ -606,6 +664,8 @@ const CharactersSection = () => {
       personality: "Nancy is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/QVjR1Iycq3wAAAAC/im-home-here.gif",
       color: "border-blue-400",
+      symbolism: "The Bystander Conscience",
+      symbolismDesc: "An observer of the city's madness, frequently swept up in the collective hysteria despite attempts at normalcy.",
     },
     {
             name: "Harold",
@@ -616,6 +676,8 @@ const CharactersSection = () => {
       personality: "Harold is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/4Sv-UyPp768AAAAC/spongebob-spongebob-meme.gif",
       color: "border-teal-400",
+      symbolism: "The Combative Everyman",
+      symbolismDesc: "Always ready to instigate a riot or brawl over minor disagreements, proving that civilization is merely a thin veil over primal rage.",
     },
     {
             name: "Scooter",
@@ -626,6 +688,8 @@ const CharactersSection = () => {
       personality: "Scooter is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/9WKKjpfgOz4AAAAC/scooter-robux.gif",
       color: "border-purple-400",
+      symbolism: "The Transient Hedonist",
+      symbolismDesc: "A surfer who floats through life prioritizing vibes, frequently experiencing horrific accidents while maintaining absolute apathy.",
     },
     {
             name: "Flats the Flounder",
@@ -636,6 +700,8 @@ const CharactersSection = () => {
       personality: "Flats the Flounder is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/QO0GWfww27cAAAAC/sb-spongebob.gif",
       color: "border-teal-400",
+      symbolism: "Irrational Violence",
+      symbolismDesc: "The purest form of unprovoked aggression. He has no motive for his brutality other than an innate biological imperative to kick butts.",
     },
     {
             name: "Jellyfish King",
@@ -646,6 +712,8 @@ const CharactersSection = () => {
       personality: "Jellyfish King is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/buOdVaNDBfoAAAAC/kissy-face-spongebob.gif",
       color: "border-purple-400",
+      symbolism: "The Apex Sovereign",
+      symbolismDesc: "A ruling electric monarch who enforces the unspoken laws of nature when industrial hubris goes too far.",
     },
     {
             name: "Dennis",
@@ -656,6 +724,8 @@ const CharactersSection = () => {
       personality: "Dennis is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/veZVj7stgGsAAAAC/drama-spongebob.gif",
       color: "border-purple-400",
+      symbolism: "Unstoppable Mortality / The Terminator",
+      symbolismDesc: "A relentless, boots-wearing force of death who removes the safety net of cartoon invulnerability, making consequence intensely real.",
     },
     {
             name: "The Cyclops",
@@ -666,6 +736,8 @@ const CharactersSection = () => {
       personality: "The Cyclops is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/IVQ2OP1WTIYAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-orange-400",
+      symbolism: "The Anthropocene Terror",
+      symbolismDesc: "To the sea creatures, he is the ultimate cosmic horror: a human diver turning living beings into petrified, commodified trinkets.",
     },
     {
             name: "DoodleBob",
@@ -676,6 +748,8 @@ const CharactersSection = () => {
       personality: "DoodleBob is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/2XkmAXc_AugAAAAC/spongebob-spongebob-squarepants.gif",
       color: "border-blue-400",
+      symbolism: "The Frankenstein Dilemma / Created Chaos",
+      symbolismDesc: "A primitive, chaotic reflection of his creator lacking moral boundaries, proving that creation without constraint breeds inevitable linguistic and physical destruction.",
     },
     {
             name: "Don the Whale",
@@ -686,6 +760,8 @@ const CharactersSection = () => {
       personality: "Don the Whale is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/AasjZaSXqLkAAAAC/whale-diablo-immortal.gif",
       color: "border-purple-400",
+      symbolism: "The Competitive Ego",
+      symbolismDesc: "A foil to Larry the Lobster, representing the endless arms race of physical bulk in modern gym culture.",
     },
     {
             name: "Chip",
@@ -696,6 +772,8 @@ const CharactersSection = () => {
       personality: "Chip is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/2RX3TS20BAsAAAAC/justalotto.gif",
       color: "border-blue-400",
+      symbolism: "The Illusion of Utility",
+      symbolismDesc: "A potato chip functioning as an imaginary friend, symbolizing how humans project immense sentimental value onto valueless inanimate objects.",
     },
     {
             name: "Penny",
@@ -706,6 +784,8 @@ const CharactersSection = () => {
       personality: "Penny is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/B49R2Vu-wcgAAAAC/spongebob-money.gif",
       color: "border-green-400",
+      symbolism: "The Monetary Muse",
+      symbolismDesc: "A piece of currency anthropomorphized out of sheer loneliness, revealing the tragic intersection of isolation and capital.",
     },
     {
             name: "Narlene",
@@ -716,6 +796,8 @@ const CharactersSection = () => {
       personality: "Narlene is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/LN9ocvi3z6UAAAAC/bh187-spongebob.gif",
       color: "border-teal-400",
+      symbolism: "Backwoods Escapism",
+      symbolismDesc: "Represents camp-based nostalgia and the feral simplicity existing outside the modernized boundaries of the city.",
     },
     {
             name: "Nobby",
@@ -726,6 +808,8 @@ const CharactersSection = () => {
       personality: "Nobby is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/itUK44ktVrkAAAAC/we-are-coming-spongebob-squarepants.gif",
       color: "border-pink-400",
+      symbolism: "Feral Innocence",
+      symbolismDesc: "The wild, uncorrupted, entirely unintelligible side of childhood wonderment living off the grid.",
     },
     {
             name: "Captain Blue",
@@ -736,6 +820,8 @@ const CharactersSection = () => {
       personality: "Captain Blue is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/ztqiZ5K2_dsAAAAC/spongebob.gif",
       color: "border-pink-400",
+      symbolism: "The Retired Authority",
+      symbolismDesc: "An old, grizzled figure clinging to past authority while ultimately offering guidance through cynical, hard-earned survival mechanisms.",
     },
     {
             name: "Mrs Tentacles",
@@ -746,6 +832,8 @@ const CharactersSection = () => {
       personality: "Mrs Tentacles is a character in SpongeBob SquarePants.",
       image: "https://media.tenor.com/VrWuyWQVAfsAAAAC/squidward-squidward-tentacles.gif",
       color: "border-blue-400",
+      symbolism: "The Unattainable Standard",
+      symbolismDesc: "Squidward's elderly mother whose constant disappointment echoes the profound dread of failing to meet parental expectations despite lifelong artistic effort.",
     }
 ];
 

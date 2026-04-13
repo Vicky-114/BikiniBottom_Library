@@ -135,7 +135,7 @@ function BubbleTransition() {
       {bubbles.map((b) => (
         <div 
           key={b.id}
-          className="absolute bg-white/40 border-[4px] md:border-[8px] border-cyan-200 rounded-full shadow-[10px_10px_0_rgba(0,0,0,0.1),_inset_0_-10px_15px_rgba(0,200,255,0.6)] backdrop-blur-sm"
+          className="absolute bg-sky-100/10 border-[2px] md:border-[4px] border-[#38bdf8] rounded-full shadow-[inset_-6px_-6px_15px_rgba(14,165,233,0.4),_inset_4px_4px_10px_rgba(255,255,255,0.6)] backdrop-blur-[1px]"
           style={{
             left: `${b.x}vw`,
             bottom: `-25vh`, // start below the screen
@@ -146,7 +146,12 @@ function BubbleTransition() {
             animationDelay: `${b.delay}s`,
             opacity: 0,
           }}
-        />
+        >
+           {/* Primary curved glare */}
+           <div className="absolute top-[15%] right-[18%] w-[35%] h-[18%] bg-white/90 rounded-[50%] -rotate-45 blur-[0.5px] opacity-90" />
+           {/* Secondary small dot */}
+           <div className="absolute top-[38%] right-[12%] w-[12%] h-[12%] bg-white/90 rounded-full blur-[0.5px] opacity-90" />
+        </div>
       ))}
     </div>
   );

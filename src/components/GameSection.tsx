@@ -14,13 +14,12 @@ const GameSection = () => {
                 className="fixed inset-0 w-full h-full z-[-1] transition-opacity duration-1000"
                 style={{
                     backgroundImage: `url(${pageBg})`,
-                    backgroundSize: 'contain',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    backgroundColor: '#000',
                 }}
             >
-                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute inset-0 bg-black/20"></div>
             </div>
 
             <section className="animate-fade-in-up w-full flex flex-col items-center justify-center pt-2 relative z-10 px-4 min-h-[80vh]">

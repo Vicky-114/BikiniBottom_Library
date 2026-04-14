@@ -361,11 +361,11 @@
 
 @keyframes explodeEmoji {
   0% { transform: scale(0) rotate(0deg); opacity: 0; }
-  20% { transform: scale(0.6) rotate(-5deg); opacity: 1; }
-  80% { transform: scale(1.5) rotate(10deg); opacity: 1; }
-  100% { transform: scale(6) rotate(15deg); opacity: 0; }
+  10% { transform: scale(0.1) rotate(-5deg); opacity: 1; }
+  90% { transform: scale(15) rotate(10deg); opacity: 1; }
+  100% { transform: scale(25) rotate(15deg); opacity: 1; }
 }
 
 .animate-explode-emoji {
-  animation: explodeEmoji 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: explodeEmoji 4.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }

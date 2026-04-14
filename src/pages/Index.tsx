@@ -236,7 +236,7 @@ const Index = () => {
         {/* Main content area */}
         <main className="flex-1 w-full px-4 md:px-6 pb-10 relative z-0 mt-4 md:mt-0">
           <div className="max-w-5xl mx-auto">
-            {(isHome || activeSection === 'intro') ? renderSection() : renderSection()}
+            {renderSection()}
           </div>
         </main>
 

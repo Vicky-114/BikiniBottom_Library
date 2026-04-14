@@ -167,6 +167,7 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
   const [caughtAt, setCaughtAt] = useState<{ x: number, y: number } | null>(null);
   const [failedAt, setFailedAt] = useState<{ x: number, y: number } | null>(null);
   const [showFailureScreen, setShowFailureScreen] = useState(false);
+  const [isAutoExploding, setIsAutoExploding] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -183,6 +184,18 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
     }, 150);
     return () => clearInterval(frameInterval);
   }, []);
+
+  useEffect(() => {
+    // Automatically trigger explosion shortly after mount
+    const timer = setTimeout(() => {
+      setIsAutoExploding(true);
+      // Wait for animation to nearly finish before calling onCatch
+      setTimeout(() => {
+        onCatch();
+      }, 900); // Slightly less than 1.0s animation duration
+    }, 100); 
+    return () => clearTimeout(timer);
+  }, [onCatch]);
 
   const handleCatch = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -253,7 +266,23 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
         />
       )}
 
-      {/* Bubble Transition Mask */}
+      {/* Success/Auto Explosion Mask */}
+      {isAutoExploding && (
+        <div className="fixed inset-0 z-[500] pointer-events-none overflow-hidden bg-transparent">
+           <div 
+            className="absolute animate-explode-emoji z-[500]"
+            style={{
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          >
+            <img src={explosionAsset} alt="Explosion" className="w-[400px] h-[400px] object-contain drop-shadow-[0_0_50px_rgba(255,200,0,0.8)] filter drop-shadow-2xl" />
+          </div>
+        </div>
+      )}
+
+      {/* Success/Auto Explosion Mask */}
       {caughtAt && (
         <BubbleTransition />
       )}

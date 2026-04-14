@@ -366,5 +366,5 @@
 }
 
 .animate-explode-emoji {
-  animation: explodeEmoji 3.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: explodeEmoji 1.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }

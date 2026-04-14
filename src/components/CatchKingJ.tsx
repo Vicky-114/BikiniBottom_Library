@@ -204,7 +204,7 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
     
     setTimeout(() => {
       setShowFailureScreen(true);
-    }, 800); // Wait for explosion animation to finish propagating
+    }, 2000); // Increased delay for slower cinematic explosion
   };
 
   return (

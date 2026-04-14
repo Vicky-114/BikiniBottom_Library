@@ -392,13 +392,7 @@ const LocationsSection = () => {
               onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-7xl h-[85vh] flex flex-col items-center justify-center cursor-default bg-white/5 rounded-3xl p-2 border-4 border-white/20 shadow-2xl"
             >
-              {/* Title inside the modal, above the map */}
-              <p className="mb-3 text-white font-display text-xl tracking-wider flex items-center gap-3">
-                <span className="w-12 h-1 bg-primary rounded-full"></span>
-                BIKINI BOTTOM MAP
-                <span className="w-12 h-1 bg-primary rounded-full"></span>
-              </p>
-              <div className="w-full flex-1 rounded-2xl overflow-hidden flex items-center justify-center min-h-0">
+              <div className="w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
                 <img 
                   src={map1} 
                   alt="Bikini Bottom Map" 

@@ -16,6 +16,7 @@ import net1 from "@/assets/net1.png";
 import net2 from "@/assets/net2.png";
 import net3 from "@/assets/net3.png";
 import net4 from "@/assets/net4.png";
+import explosionAsset from "@/assets/explosion.png";
 
 const nets = [net1, net2, net3, net4];
 
@@ -259,17 +260,17 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
       
       {/* Explosion Mask */}
       {failedAt && !showFailureScreen && (
-        <div className="fixed inset-0 z-[200] pointer-events-none flex items-center justify-center">
-            <div 
-              className="w-12 h-12 bg-[#ff5500] rounded-full shadow-[0_0_150px_100px_rgba(255,50,0,1)]"
-              style={{
-                position: 'fixed',
-                left: failedAt.x,
-                top: failedAt.y,
-                transform: 'translate(-50%, -50%)',
-                animation: 'explosion 0.8s cubic-bezier(0.1, 0.9, 0.2, 1) forwards'
-              }}
-            />
+        <div className="fixed inset-0 z-[200] pointer-events-none overflow-hidden">
+          <div 
+            className="absolute animate-explode-emoji z-[150]"
+            style={{
+              left: `${failedAt.x}px`,
+              top: `${failedAt.y}px`,
+              transform: 'translate(-50%, -50%)'
+            }}
+          >
+            <img src={explosionAsset} alt="Explosion" className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] object-contain drop-shadow-[0_0_50px_rgba(255,50,50,0.8)] filter drop-shadow-2xl" />
+          </div>
         </div>
       )}
 

@@ -360,10 +360,10 @@
 }
 
 @keyframes explodeEmoji {
-  0% { transform: scale(0) rotate(0deg); opacity: 0; }
-  10% { transform: scale(0.1) rotate(-5deg); opacity: 1; }
-  90% { transform: scale(15) rotate(10deg); opacity: 1; }
-  100% { transform: scale(25) rotate(15deg); opacity: 1; }
+  0% { transform: translate(-50%, -50%) scale(0) rotate(0deg); opacity: 0; }
+  10% { transform: translate(-50%, -50%) scale(0.1) rotate(-5deg); opacity: 1; }
+  90% { transform: translate(-50%, -50%) scale(15) rotate(10deg); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(25) rotate(15deg); opacity: 1; }
 }
 
 .animate-explode-emoji {

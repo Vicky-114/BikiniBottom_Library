@@ -38,11 +38,11 @@ const LanguageSelector = () => {
         <div className="relative inline-block z-50 pointer-events-auto" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/70 hover:bg-white/90 text-ocean-deep font-display text-sm transition-all shadow-sm border-2 border-primary"
+                className="flex items-center justify-center gap-1 px-3 md:px-6 py-2 rounded-full border-2 border-[#002f5a] font-display text-xs md:text-sm text-foreground/75 bg-white hover:bg-white/90 transition-colors shadow-sm whitespace-nowrap"
                 aria-label="Select Language"
             >
                 <img src={languageIcon} alt="Language" className="w-[26px] h-[26px] object-contain" />
-                <span className="hidden sm:inline-block">Language</span>
+                <span>Language</span>
             </button>
 
             {isOpen && (

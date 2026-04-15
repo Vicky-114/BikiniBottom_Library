@@ -104,7 +104,7 @@ function Jellyfish({
               className={`w-full h-full object-contain ${
                 isKing ? "transition-transform duration-200 active:scale-90" : "filter drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)]"
               }`}
-              style={{ animation: floatAnim }}
+              style={{ animation: floatAnim, userSelect: "none", WebkitUserDrag: "none" as React.CSSProperties["WebkitUserDrag"] }}
               onPointerDown={onClick}
             />
           </div>
@@ -207,11 +207,18 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
     
     setTimeout(() => {
       setShowFailureScreen(true);
-    }, 3000); // 3s total duration to match animation
+    }, 950); // Switch as soon as the explosion finishes covering the screen
   };
 
   return (
-    <div className="fixed inset-0 z-[100] overflow-hidden flex items-center justify-center bg-black cursor-none">
+    <div
+      className="fixed inset-0 z-[100] overflow-hidden flex items-center justify-center bg-black cursor-none select-none"
+      style={{
+        userSelect: "none",
+        WebkitUserSelect: "none",
+        WebkitTouchCallout: "none",
+      }}
+    >
       <img 
         src={jellyfishFields} 
         alt="Jellyfish Fields" 
@@ -313,8 +320,13 @@ export default function CatchKingJ({ onCatch }: { onCatch: () => void }) {
         <img 
           src={nets[netFrame]} 
           alt="net cursor" 
+          draggable={false}
           className="w-[400px] h-[400px] object-contain drop-shadow-lg bg-transparent"
-          style={{ transform: 'rotate(-15deg)' }}
+          style={{
+            transform: 'rotate(-15deg)',
+            userSelect: "none",
+            WebkitUserDrag: "none" as React.CSSProperties["WebkitUserDrag"],
+          }}
         />
       </div>
     </div>

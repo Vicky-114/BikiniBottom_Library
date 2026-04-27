@@ -44,7 +44,7 @@ const Index = () => {
         ? `${10 + (i * 16) + Math.random() * 4}%`
         : `${18 + (i * 12) + Math.random() * 3}%`,
       delay: (Math.random() * 10) * -1,
-      duration: 22 + Math.random() * 12
+      duration: (22 + Math.random() * 12) / 1.5
     }));
   }, []);
 

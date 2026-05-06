@@ -40,6 +40,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Patrick, Squidward (unwillingly), Sandy",
       hates: "Squidward (when it gets too loud)",
+      image: "https://static.wikia.nocookie.net/spongebob/images/c/cb/SpongeBob%27s_house_in_Season_14.png",
       icon: "🍍" 
     },
     { 
@@ -50,6 +51,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, The Flying Dutchman",
       hates: "Anyone who tries to clean it",
+      image: "https://static.wikia.nocookie.net/spongebob/images/7/7b/Patrick%27s_house_in_Season_14.png",
       icon: "🪨" 
     },
     { 
@@ -60,6 +62,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "SpongeBob and Patrick (frequent intruders)",
       hates: "SpongeBob and Patrick",
+      image: "https://static.wikia.nocookie.net/spongebob/images/8/87/Squidward%27s_house_in_Season_14.png",
       icon: "🗿" 
     },
     { 
@@ -70,7 +73,8 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "The entire Bikini Bottom population",
       hates: "Plankton",
-      image: "https://media.tenor.com/R90kXB3iBcgAAAAC/bh187-spongebob.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/4/41/The_Krusty_Krab_in_Season_14.png",
+      icon: "🍔" 
     },
     { 
       name: "Chum Bucket", 
@@ -80,7 +84,8 @@ const LocationsSection = () => {
       rating: 0.5,
       visitors: "Plankton, Karen, occasionally a confused tourist",
       hates: "Everyone except Plankton",
-      image: "https://media.tenor.com/Dzfb4Z5CaXEAAAAC/spongebob-mr-krabs.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/9/90/The_Chum_Bucket_in_Season_14.png",
+      icon: "🪣" 
     },
     { 
       name: "Boating School", 
@@ -90,7 +95,8 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "SpongeBob (permanently), Mrs. Puff",
       hates: "SpongeBob (according to Mrs. Puff), Squidward",
-      image: "https://media.tenor.com/NBkJlclgORQAAAAC/spongebob-squarepants-patrick-star.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/6/6f/Mrs._Puff%27s_Boating_School_in_Season_14.png",
+      icon: "⛵" 
     },
     { 
       name: "Jellyfish Fields", 
@@ -100,7 +106,8 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick, Kevin C. Cucumber",
       hates: "People who use improper nets",
-      image: "https://media.tenor.com/I6fKCL_Ck5YAAAAC/sppongebob-squarepants-fun-song-f-is-for-friends-who-do-stuff-together-spongebob-squarepants.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/a/a2/Jellyfish_Fields_in_Season_14.png",
+      icon: "🪼" 
     },
     { 
       name: "Goo Lagoon", 
@@ -110,7 +117,8 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Larry the Lobster, Surfers, Muscle Fish",
       hates: "Rainy days (underwater...)",
-      image: "https://media.tenor.com/bX_Tt3ZBSPEAAAAC/spongebob-patrick.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/0/07/Goo_Lagoon_in_Season_14.png",
+      icon: "🏖️" 
     },
     { 
       name: "Sandy’s Treehouse", 
@@ -120,6 +128,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (must wear water helmets)",
       hates: "Water leaks",
+      image: "https://static.wikia.nocookie.net/spongebob/images/3/3a/Sandy%27s_Treedome_in_Season_14.png",
       icon: "🐿️" 
     },
     { 
@@ -130,7 +139,8 @@ const LocationsSection = () => {
       rating: 3.5,
       visitors: "Strange bioluminescent creatures",
       hates: "Travelers who miss the bus",
-      image: "https://media.tenor.com/B1oOvvQ8BLEAAAAC/walking-dead-shane-gillis.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/2/23/Rock_Bottom_cityscape.png",
+      icon: "🪨" 
     },
     { 
       name: "Bikini Bottom Mall", 
@@ -140,7 +150,8 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "Pearl Krabs, Teenagers, Shoppers",
       hates: "Mr. Krabs (due to high prices)",
-      image: "https://media.tenor.com/Nic4QCLGrgEAAAAC/spongebob-squarepants-spongebob.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/c/c5/Bikini_Bottom_Mall_in_Season_11.png",
+      icon: "🛍️" 
     },
     { 
       name: "King Neptune’s Palace", 
@@ -150,18 +161,119 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Royal Guard, King Neptune, Mindy",
       hates: "Thieves (especially crown thieves!)",
+      image: "https://static.wikia.nocookie.net/spongebob/images/0/06/King_Neptune%27s_castle.png",
       icon: "👑" 
     },
-    { name: "Boating School Library", description: "A quiet place of learning. Rarely visited by SpongeBob.", purpose: "Library", specificLocation: "Inside Boating School", rating: 3, visitors: "Studious fish", hates: "Loud noises", image: "https://media.tenor.com/rU4yq3MjZJoAAAAC/spongebob-patrick.gif" },
-    { name: "Bikini Bottom Hospital", description: "Handles everything from 'suds' to 'explosive hiccups'.", purpose: "Medical Center", specificLocation: "Industrial District", rating: 4, visitors: "Injured fish, Dr. Gill Gilliam", hates: "Germs", image: "https://media.tenor.com/n2-FcLJN7T4AAAAC/spongebob-battle-for-bikini-bottom.gif" },
-    { name: "Bikini Bottom Police Station", description: "Deals with littering and world-domination attempts.", purpose: "Law Enforcement", specificLocation: "Downtown", rating: 3.5, visitors: "Police officers, criminals", hates: "Lawbreakers", image: "https://media.tenor.com/6xpiDZc5lhgAAAAC/ziarastar.gif" },
-    { name: "Bikini Bottom Prison", description: "Where those who break the laws of the sea are sent.", purpose: "High Security Prison", specificLocation: "Outskirts", rating: 1, visitors: "Plankton (frequent guest), Dirty Bubble", hates: "Inmates", image: "https://media.tenor.com/6xpiDZc5lhgAAAAC/ziarastar.gif" },
-    { name: "City Hall", description: "The political center where the Mayor handles civic duties.", purpose: "Civic Center", specificLocation: "City Center", rating: 3, visitors: "The Mayor, Citizens", hates: "Protests", image: "https://media.tenor.com/RICCYVztA34AAAAC/this-place-is-the-coolest-spongebob-squarepants.gif" },
-    { name: "Goofy Goober Ice Cream Boat", description: "A nautical-themed ice cream parlor and entertainment venue.", purpose: "Party Venue", specificLocation: "Boardwalk", rating: 5, visitors: "SpongeBob, Patrick, Kids", hates: "Grumpy adults", image: "https://media.tenor.com/mU-CJIC74dkAAAAC/spongebob-spongebob-squarepants.gif" },
-    { name: "Barg'N-Mart", description: "The local supermarket for canned kelp and bubble soap.", purpose: "Supermarket", specificLocation: "Commercial Zone", rating: 4, visitors: "Everyone needing groceries", hates: "Long lines", image: "https://media.tenor.com/TAViwV4LJl8AAAAC/barg-n-mart-spongebob-squarepants.gif" },
-    { name: "Fancy Restaurant", description: "An upscale dining establishment for special occasions.", purpose: "Fine Dining", specificLocation: "Uptown", rating: 4.5, visitors: "Squidward, Pearl, Mr. Krabs (when someone else pays)", hates: "Poor table manners", image: "https://media.tenor.com/WfVPBqIGut8AAAAC/fine-dining-spongebob.gif" },
-    { name: "Salty Spitoon", description: "The toughest club in the ocean. No weenies allowed!", purpose: "Tough-Only Club", specificLocation: "The Docks", rating: 4, visitors: "Reg, Muscle Fish, Tough guys", hates: "Weenies", image: "https://media.tenor.com/5nM6mEOgH7cAAAAC/the-salty-spitoon-spongebob.gif" },
-    { name: "Weenie Hut Jr", description: "A soft and friendly alternative to the Salty Spitoon.", purpose: "Safe Space for Weenies", specificLocation: "Across from Salty Spitoon", rating: 3, visitors: "The robot waiter, SpongeBob", hates: "Aggression", image: "https://media.tenor.com/MHGf2zvM0iMAAAAC/brandon-flowers-the-killers.gif" },
+    { 
+      name: "Boating School Library", 
+      description: "A quiet place of learning. Rarely visited by SpongeBob.", 
+      purpose: "Library", 
+      specificLocation: "Inside Boating School", 
+      rating: 3, 
+      visitors: "Studious fish", 
+      hates: "Loud noises", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/3/3b/Mrs._Puff%27s_Boating_School_Library.png",
+      icon: "📚" 
+    },
+    { 
+      name: "Bikini Bottom Hospital", 
+      description: "Handles everything from 'suds' to 'explosive hiccups'.", 
+      purpose: "Medical Center", 
+      specificLocation: "Industrial District", 
+      rating: 4, 
+      visitors: "Injured fish, Dr. Gill Gilliam", 
+      hates: "Germs", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/f/f6/Bikini_Bottom_Hospital_in_Season_11.png",
+      icon: "🏥" 
+    },
+    { 
+      name: "Bikini Bottom Police Station", 
+      description: "Deals with littering and world-domination attempts.", 
+      purpose: "Law Enforcement", 
+      specificLocation: "Downtown", 
+      rating: 3.5, 
+      visitors: "Police officers, criminals", 
+      hates: "Lawbreakers", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/2/22/Bikini_Bottom_Police_Department_in_Season_11.png",
+      icon: "🚓" 
+    },
+    { 
+      name: "Bikini Bottom Prison", 
+      description: "Where those who break the laws of the sea are sent.", 
+      purpose: "High Security Prison", 
+      specificLocation: "Outskirts", 
+      rating: 1, 
+      visitors: "Plankton (frequent guest), Dirty Bubble", 
+      hates: "Inmates", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/2/20/Bikini_Bottom_Jail_in_Season_11.png",
+      icon: "⛓️" 
+    },
+    { 
+      name: "City Hall", 
+      description: "The political center where the Mayor handles civic duties.", 
+      purpose: "Civic Center", 
+      specificLocation: "City Center", 
+      rating: 3, 
+      visitors: "The Mayor, Citizens", 
+      hates: "Protests", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/e/ef/City_Hall.png",
+      icon: "🏛️" 
+    },
+    { 
+      name: "Goofy Goober Ice Cream Boat", 
+      description: "A nautical-themed ice cream parlor and entertainment venue.", 
+      purpose: "Party Venue", 
+      specificLocation: "Boardwalk", 
+      rating: 5, 
+      visitors: "SpongeBob, Patrick, Kids", 
+      hates: "Grumpy adults", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/0/00/Goofy_Goober%27s_Ice_Cream_Party_Boat_exterior.png",
+      icon: "🍨" 
+    },
+    { 
+      name: "Barg'N-Mart", 
+      description: "The local supermarket for canned kelp and bubble soap.", 
+      purpose: "Supermarket", 
+      specificLocation: "Commercial Zone", 
+      rating: 4, 
+      visitors: "Everyone needing groceries", 
+      hates: "Long lines", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/1/15/Barg%27N-Mart_in_Season_11.png",
+      icon: "🛒" 
+    },
+    { 
+      name: "Fancy Restaurant", 
+      description: "An upscale dining establishment for special occasions.", 
+      purpose: "Fine Dining", 
+      specificLocation: "Uptown", 
+      rating: 4.5, 
+      visitors: "Squidward, Pearl, Mr. Krabs (when someone else pays)", 
+      hates: "Poor table manners", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/f/f6/Fancy_Restaurant_exterior.png",
+      icon: "🍽️" 
+    },
+    { 
+      name: "Salty Spitoon", 
+      description: "The toughest club in the ocean. No weenies allowed!", 
+      purpose: "Tough-Only Club", 
+      specificLocation: "The Docks", 
+      rating: 4, 
+      visitors: "Reg, Muscle Fish, Tough guys", 
+      hates: "Weenies", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/6/6f/Salty_Spitoon_exterior.png",
+      icon: "💪" 
+    },
+    { 
+      name: "Weenie Hut Jr", 
+      description: "A soft and friendly alternative to the Salty Spitoon.", 
+      purpose: "Safe Space for Weenies", 
+      specificLocation: "Across from Salty Spitoon", 
+      rating: 3, 
+      visitors: "The robot waiter, SpongeBob", 
+      hates: "Aggression", 
+      image: "https://static.wikia.nocookie.net/spongebob/images/7/77/Super_Weenie_Hut_Jr%27s.png",
+      icon: "🌭" 
+    },
     { 
       name: "Kelp Shake", 
       description: "A trendy juice bar franchise that once took over the town with its addictive neon-green beverages.", 
@@ -170,7 +282,8 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Almost everyone in town",
       hates: "Plankton (competition), Health inspectors",
-      image: "https://media.tenor.com/USQa-39V_MYAAAAC/spongebob-squarepants-spongebob.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/f/f7/Kelp_Shake_%28restaurant%29_exterior.png",
+      icon: "🥤" 
     },
     { 
       name: "Kelp Forest", 
@@ -180,7 +293,8 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, Patrick, Squidward (accidentally)",
       hates: "Lost travelers, The Flying Dutchman",
-      image: "https://media.tenor.com/zcFL7y7LyRwAAAAC/spongebob-spongebob-squarepants.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/8/87/Kelp_Forest.png",
+      icon: "🌲" 
     },
     { 
       name: "Coral Forest", 
@@ -190,7 +304,8 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Nature enthusiasts, Tourists",
       hates: "Coral harvesters",
-      image: "https://media.tenor.com/bJrE9U1XZWgAAAAC/tiptoeing-spongebob-squarepants.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/d/df/Coral_Forest.png",
+      icon: "🪸" 
     },
     { 
       name: "The Deep Sea", 
@@ -200,7 +315,8 @@ const LocationsSection = () => {
       rating: 3,
       visitors: "Deep sea monsters, Adventurers",
       hates: "Sunlight lovers",
-      image: "https://media.tenor.com/BM9vjRQJhrYAAAAC/defend-the-deep-stop-deep-seabed-mining.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/4/4b/The_Trench.png",
+      icon: "🌊" 
     },
     { 
       name: "The Abyss", 
@@ -210,7 +326,8 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "Bioluminescent angler fish",
       hates: "Those with claustrophobia",
-      image: "https://media.tenor.com/zWE1-Lz8-9gAAAAC/playing-piano-spongebob.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/3/36/The_Abyss.png",
+      icon: "🌑" 
     },
     { 
       name: "Sandy’s Laboratory", 
@@ -220,6 +337,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Sandy Cheeks, SpongeBob (Assistant)",
       hates: "Anti-science fish, Karate rule-breakers",
+      image: "https://static.wikia.nocookie.net/spongebob/images/3/3a/Sandy%27s_Treedome_in_Season_14.png",
       icon: "🧪" 
     },
     { 
@@ -230,7 +348,8 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Squilliam Fancyson, The upper class",
       hates: "Squidward, Mr. Krabs (due to envy)",
-      image: "https://media.tenor.com/hUyJ8NHG-ZAAAAAC/spongebob-house-fancy.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/a/ab/Squilliam%27s_house_exterior.png",
+      icon: "🏯" 
     },
     { 
       name: "Bikini Bottom Cemetery", 
@@ -240,7 +359,8 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "The Flying Dutchman, Mourners, Ghost hunters",
       hates: "Those afraid of the dark",
-      image: "https://media.tenor.com/n2-FcLJN7T4AAAAC/spongebob-battle-for-bikini-bottom.gif" 
+      image: "https://static.wikia.nocookie.net/spongebob/images/1/1f/Bikini_Bottom_Cemetery.png",
+      icon: "🪦" 
     },
     { 
       name: "Old Man Jenkins’ House", 
@@ -250,6 +370,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob (occasionally), Family members",
       hates: "Noisy neighbors, Flying boatmobiles crashing into his yard",
+      image: "https://static.wikia.nocookie.net/spongebob/images/4/42/Old_Man_Jenkins%27_house_exterior.png",
       icon: "🏚️" 
     },
     { 
@@ -260,6 +381,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (acting as crew), Ghosts",
       hates: "People who don't believe in him, Being 'sold' on eBay",
+      image: "https://static.wikia.nocookie.net/spongebob/images/e/ea/The_Flying_Dutchman%27s_Ship.png",
       icon: "🏴‍☠️" 
     },
   ];
@@ -292,7 +414,13 @@ const LocationsSection = () => {
             </button>
             <div className="rounded-2xl bg-white/80 p-5 md:p-8 border-2 border-primary/50 shadow-lg">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-6 text-center md:text-left">
-                <span className="text-6xl md:text-7xl drop-shadow-md">{selectedLoc.icon}</span>
+                <div className="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 flex items-center justify-center">
+                  {selectedLoc.image ? (
+                    <img src={selectedLoc.image} alt={selectedLoc.name} className="w-full h-full object-contain rounded-xl shadow-sm hover:scale-105 transition-transform" />
+                  ) : (
+                    <span className="text-6xl md:text-7xl drop-shadow-md">{selectedLoc.icon}</span>
+                  )}
+                </div>
                 <div className="flex-1 w-full">
                   <h3 className="font-display text-2xl md:text-3xl text-ocean-deep leading-tight mb-2">{selectedLoc.name}</h3>
                   <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
@@ -367,7 +495,13 @@ const LocationsSection = () => {
                   onClick={() => setSelectedLocName(loc.name)}
                   className="text-left w-full flex flex-col items-center justify-center gap-3 rounded-xl bg-white/70 hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 p-6 border-2 border-primary/40 shadow-sm hover:shadow-md hover:border-primary"
                 >
-                  <div className="text-5xl drop-shadow-sm mb-1 hover:scale-110 transition-transform">{loc.icon}</div>
+                  <div className="w-24 h-24 mb-2 hover:scale-110 transition-transform flex items-center justify-center">
+                    {loc.image ? (
+                      <img src={loc.image} alt={loc.name} className="w-full h-full object-contain drop-shadow-md" />
+                    ) : (
+                      <div className="text-5xl drop-shadow-sm">{loc.icon}</div>
+                    )}
+                  </div>
                   <h3 className="font-display text-lg text-ocean-deep leading-tight text-center">{loc.name}</h3>
                   <div className="flex flex-col items-center gap-1">
                     {starRating(loc.rating)}

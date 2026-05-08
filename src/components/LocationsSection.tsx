@@ -4,6 +4,26 @@ import { useTranslation } from "react-i18next";
 import locationsBg from "@/assets/new-locations-bg.jpg";
 import map1 from "@/assets/map1.jpg";
 
+import krustyKrabImg from "@/assets/locations/Krusty_Krab.png";
+import chumBucketImg from "@/assets/locations/Chum_Bucket.png";
+import boatingSchoolImg from "@/assets/locations/Mrs._Puffs_Boating_School.png";
+import jellyfishFieldsImg from "@/assets/locations/Jellyfish_Fields.png";
+import gooLagoonImg from "@/assets/locations/Goo_Lagoon.png";
+import bikiniBottomMallImg from "@/assets/locations/Bikini_Bottom_Mall.png";
+import kingNeptunesPalaceImg from "@/assets/locations/King_Neptunes_Palace.png";
+import boatingSchoolLibraryImg from "@/assets/locations/Boating_School_Library.png";
+import hospitalImg from "@/assets/locations/Bikini_Bottom_Hospital.png";
+import policeImg from "@/assets/locations/Bikini_Bottom_Police_Department.png";
+import prisonImg from "@/assets/locations/Bikini_Bottom_Jail.png";
+import cityHallImg from "@/assets/locations/City_Hall.png";
+import iceCreamBoatImg from "@/assets/locations/Goofy_Goobers_Ice_Cream_Party_Boat.png";
+import bargNMartImg from "@/assets/locations/BargN-Mart.png";
+import fancyRestaurantImg from "@/assets/locations/Fancy!.png";
+import weenieHutJrImg from "@/assets/locations/Super_Weenie_Hut_Jrs.png";
+import kelpForestImg from "@/assets/locations/Kelp_Forest.png";
+import coralForestImg from "@/assets/locations/Brain_Coral_Fields.png";
+import trenchImg from "@/assets/locations/The_Trench.png";
+import oldManJenkinsImg from "@/assets/locations/Old_Man_Jenkins_house.png";
 const LocationsSection = () => {
   const { t } = useTranslation();
   const [selectedLocName, setSelectedLocName] = useState<string | null>(null);
@@ -40,7 +60,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Patrick, Squidward (unwillingly), Sandy",
       hates: "Squidward (when it gets too loud)",
-      image: "https://static.wikia.nocookie.net/spongebob/images/c/cb/SpongeBob%27s_house_in_Season_14.png",
+      image: "https://media.tenor.com/Z4w2f5T0M5YAAAAC/spongebob-pineapple.gif",
       icon: "🍍" 
     },
     { 
@@ -51,7 +71,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, The Flying Dutchman",
       hates: "Anyone who tries to clean it",
-      image: "https://static.wikia.nocookie.net/spongebob/images/7/7b/Patrick%27s_house_in_Season_14.png",
+      image: "https://media.tenor.com/PZcK_W_kGjQAAAAC/patrick-house-spongebob.gif",
       icon: "🪨" 
     },
     { 
@@ -62,7 +82,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "SpongeBob and Patrick (frequent intruders)",
       hates: "SpongeBob and Patrick",
-      image: "https://static.wikia.nocookie.net/spongebob/images/8/87/Squidward%27s_house_in_Season_14.png",
+      image: "https://media.tenor.com/tRhP0bln-z0AAAAC/easterisland.gif",
       icon: "🗿" 
     },
     { 
@@ -73,7 +93,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "The entire Bikini Bottom population",
       hates: "Plankton",
-      image: "https://static.wikia.nocookie.net/spongebob/images/4/41/The_Krusty_Krab_in_Season_14.png",
+      image: krustyKrabImg,
       icon: "🍔" 
     },
     { 
@@ -84,7 +104,7 @@ const LocationsSection = () => {
       rating: 0.5,
       visitors: "Plankton, Karen, occasionally a confused tourist",
       hates: "Everyone except Plankton",
-      image: "https://static.wikia.nocookie.net/spongebob/images/9/90/The_Chum_Bucket_in_Season_14.png",
+      image: chumBucketImg,
       icon: "🪣" 
     },
     { 
@@ -95,7 +115,7 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "SpongeBob (permanently), Mrs. Puff",
       hates: "SpongeBob (according to Mrs. Puff), Squidward",
-      image: "https://static.wikia.nocookie.net/spongebob/images/6/6f/Mrs._Puff%27s_Boating_School_in_Season_14.png",
+      image: boatingSchoolImg,
       icon: "⛵" 
     },
     { 
@@ -106,7 +126,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick, Kevin C. Cucumber",
       hates: "People who use improper nets",
-      image: "https://static.wikia.nocookie.net/spongebob/images/a/a2/Jellyfish_Fields_in_Season_14.png",
+      image: jellyfishFieldsImg,
       icon: "🪼" 
     },
     { 
@@ -117,7 +137,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Larry the Lobster, Surfers, Muscle Fish",
       hates: "Rainy days (underwater...)",
-      image: "https://static.wikia.nocookie.net/spongebob/images/0/07/Goo_Lagoon_in_Season_14.png",
+      image: gooLagoonImg,
       icon: "🏖️" 
     },
     { 
@@ -128,7 +148,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (must wear water helmets)",
       hates: "Water leaks",
-      image: "https://static.wikia.nocookie.net/spongebob/images/3/3a/Sandy%27s_Treedome_in_Season_14.png",
+      image: "https://media.tenor.com/ARjNixiiXZsAAAAC/peep-%C3%A1ine-rose-daly.gif",
       icon: "🐿️" 
     },
     { 
@@ -139,7 +159,7 @@ const LocationsSection = () => {
       rating: 3.5,
       visitors: "Strange bioluminescent creatures",
       hates: "Travelers who miss the bus",
-      image: "https://static.wikia.nocookie.net/spongebob/images/2/23/Rock_Bottom_cityscape.png",
+      image: "https://media.tenor.com/ts_UxTASGroAAAAC/cant-understand-your-accent-spongebob.gif",
       icon: "🪨" 
     },
     { 
@@ -150,7 +170,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "Pearl Krabs, Teenagers, Shoppers",
       hates: "Mr. Krabs (due to high prices)",
-      image: "https://static.wikia.nocookie.net/spongebob/images/c/c5/Bikini_Bottom_Mall_in_Season_11.png",
+      image: bikiniBottomMallImg,
       icon: "🛍️" 
     },
     { 
@@ -161,7 +181,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Royal Guard, King Neptune, Mindy",
       hates: "Thieves (especially crown thieves!)",
-      image: "https://static.wikia.nocookie.net/spongebob/images/0/06/King_Neptune%27s_castle.png",
+      image: kingNeptunesPalaceImg,
       icon: "👑" 
     },
     { 
@@ -172,7 +192,7 @@ const LocationsSection = () => {
       rating: 3, 
       visitors: "Studious fish", 
       hates: "Loud noises", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/3/3b/Mrs._Puff%27s_Boating_School_Library.png",
+      image: boatingSchoolLibraryImg,
       icon: "📚" 
     },
     { 
@@ -183,7 +203,7 @@ const LocationsSection = () => {
       rating: 4, 
       visitors: "Injured fish, Dr. Gill Gilliam", 
       hates: "Germs", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/f/f6/Bikini_Bottom_Hospital_in_Season_11.png",
+      image: hospitalImg,
       icon: "🏥" 
     },
     { 
@@ -194,7 +214,7 @@ const LocationsSection = () => {
       rating: 3.5, 
       visitors: "Police officers, criminals", 
       hates: "Lawbreakers", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/2/22/Bikini_Bottom_Police_Department_in_Season_11.png",
+      image: policeImg,
       icon: "🚓" 
     },
     { 
@@ -205,7 +225,7 @@ const LocationsSection = () => {
       rating: 1, 
       visitors: "Plankton (frequent guest), Dirty Bubble", 
       hates: "Inmates", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/2/20/Bikini_Bottom_Jail_in_Season_11.png",
+      image: prisonImg,
       icon: "⛓️" 
     },
     { 
@@ -216,7 +236,7 @@ const LocationsSection = () => {
       rating: 3, 
       visitors: "The Mayor, Citizens", 
       hates: "Protests", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/e/ef/City_Hall.png",
+      image: cityHallImg,
       icon: "🏛️" 
     },
     { 
@@ -227,7 +247,7 @@ const LocationsSection = () => {
       rating: 5, 
       visitors: "SpongeBob, Patrick, Kids", 
       hates: "Grumpy adults", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/0/00/Goofy_Goober%27s_Ice_Cream_Party_Boat_exterior.png",
+      image: iceCreamBoatImg,
       icon: "🍨" 
     },
     { 
@@ -238,7 +258,7 @@ const LocationsSection = () => {
       rating: 4, 
       visitors: "Everyone needing groceries", 
       hates: "Long lines", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/1/15/Barg%27N-Mart_in_Season_11.png",
+      image: bargNMartImg,
       icon: "🛒" 
     },
     { 
@@ -249,7 +269,7 @@ const LocationsSection = () => {
       rating: 4.5, 
       visitors: "Squidward, Pearl, Mr. Krabs (when someone else pays)", 
       hates: "Poor table manners", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/f/f6/Fancy_Restaurant_exterior.png",
+      image: fancyRestaurantImg,
       icon: "🍽️" 
     },
     { 
@@ -260,7 +280,7 @@ const LocationsSection = () => {
       rating: 4, 
       visitors: "Reg, Muscle Fish, Tough guys", 
       hates: "Weenies", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/6/6f/Salty_Spitoon_exterior.png",
+      image: "https://media.tenor.com/YhjcGpvcQawAAAAC/spongebob-tough.gif",
       icon: "💪" 
     },
     { 
@@ -271,7 +291,7 @@ const LocationsSection = () => {
       rating: 3, 
       visitors: "The robot waiter, SpongeBob", 
       hates: "Aggression", 
-      image: "https://static.wikia.nocookie.net/spongebob/images/7/77/Super_Weenie_Hut_Jr%27s.png",
+      image: weenieHutJrImg,
       icon: "🌭" 
     },
     { 
@@ -282,7 +302,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Almost everyone in town",
       hates: "Plankton (competition), Health inspectors",
-      image: "https://static.wikia.nocookie.net/spongebob/images/f/f7/Kelp_Shake_%28restaurant%29_exterior.png",
+      image: "https://media.tenor.com/VMlyjL1G6FUAAAAC/bell-building.gif",
       icon: "🥤" 
     },
     { 
@@ -293,7 +313,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, Patrick, Squidward (accidentally)",
       hates: "Lost travelers, The Flying Dutchman",
-      image: "https://static.wikia.nocookie.net/spongebob/images/8/87/Kelp_Forest.png",
+      image: kelpForestImg,
       icon: "🌲" 
     },
     { 
@@ -304,7 +324,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Nature enthusiasts, Tourists",
       hates: "Coral harvesters",
-      image: "https://static.wikia.nocookie.net/spongebob/images/d/df/Coral_Forest.png",
+      image: coralForestImg,
       icon: "🪸" 
     },
     { 
@@ -315,7 +335,7 @@ const LocationsSection = () => {
       rating: 3,
       visitors: "Deep sea monsters, Adventurers",
       hates: "Sunlight lovers",
-      image: "https://static.wikia.nocookie.net/spongebob/images/4/4b/The_Trench.png",
+      image: trenchImg,
       icon: "🌊" 
     },
     { 
@@ -326,7 +346,7 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "Bioluminescent angler fish",
       hates: "Those with claustrophobia",
-      image: "https://static.wikia.nocookie.net/spongebob/images/3/36/The_Abyss.png",
+      image: "https://media.tenor.com/_ORGfopOTmUAAAAC/spongebob-spongebob-meme.gif",
       icon: "🌑" 
     },
     { 
@@ -337,7 +357,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Sandy Cheeks, SpongeBob (Assistant)",
       hates: "Anti-science fish, Karate rule-breakers",
-      image: "https://static.wikia.nocookie.net/spongebob/images/3/3a/Sandy%27s_Treedome_in_Season_14.png",
+      image: "https://media.tenor.com/_ta3xTM3tMMAAAAC/looking-around-om-nom.gif",
       icon: "🧪" 
     },
     { 
@@ -348,7 +368,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Squilliam Fancyson, The upper class",
       hates: "Squidward, Mr. Krabs (due to envy)",
-      image: "https://static.wikia.nocookie.net/spongebob/images/a/ab/Squilliam%27s_house_exterior.png",
+      image: "https://media.tenor.com/hUyJ8NHG-ZAAAAAC/spongebob-house-fancy.gif",
       icon: "🏯" 
     },
     { 
@@ -359,7 +379,7 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "The Flying Dutchman, Mourners, Ghost hunters",
       hates: "Those afraid of the dark",
-      image: "https://static.wikia.nocookie.net/spongebob/images/1/1f/Bikini_Bottom_Cemetery.png",
+      image: "https://media.tenor.com/LUmisGkH2SQAAAAC/dance-happy.gif",
       icon: "🪦" 
     },
     { 
@@ -370,7 +390,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob (occasionally), Family members",
       hates: "Noisy neighbors, Flying boatmobiles crashing into his yard",
-      image: "https://static.wikia.nocookie.net/spongebob/images/4/42/Old_Man_Jenkins%27_house_exterior.png",
+      image: oldManJenkinsImg,
       icon: "🏚️" 
     },
     { 
@@ -381,7 +401,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (acting as crew), Ghosts",
       hates: "People who don't believe in him, Being 'sold' on eBay",
-      image: "https://static.wikia.nocookie.net/spongebob/images/e/ea/The_Flying_Dutchman%27s_Ship.png",
+      image: "https://media.tenor.com/vsWxP6J7yxoAAAAC/spongebob-flying-dutchman.gif",
       icon: "🏴‍☠️" 
     },
   ];

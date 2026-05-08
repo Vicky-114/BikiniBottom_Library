@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import jellyfishFields from "@/assets/jellyfish_fields.jpg";
 import failureBg from "@/assets/failure_bg.jpg";
-import kingJ from "@/assets/KingJ.gif";
+import kingJ from "@/assets/king_j.png";
 import jelly2 from "@/assets/jelly2.png";
 import jelly4 from "@/assets/jelly4.png";
 import jelly5 from "@/assets/jelly5.png";

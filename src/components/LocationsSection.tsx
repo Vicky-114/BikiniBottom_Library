@@ -24,6 +24,11 @@ import kelpForestImg from "@/assets/locations/Kelp_Forest.png";
 import coralForestImg from "@/assets/locations/Brain_Coral_Fields.png";
 import trenchImg from "@/assets/locations/The_Trench.png";
 import oldManJenkinsImg from "@/assets/locations/Old_Man_Jenkins_house.png";
+
+import spongebobsHouseImg from "@/assets/locations/SpongeBobs_House.png";
+import patricksHouseImg from "@/assets/locations/Patricks_House.png";
+import squidwardsHouseImg from "@/assets/locations/Squidwards_House.png";
+
 const LocationsSection = () => {
   const { t } = useTranslation();
   const [selectedLocName, setSelectedLocName] = useState<string | null>(null);
@@ -60,7 +65,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Patrick, Squidward (unwillingly), Sandy",
       hates: "Squidward (when it gets too loud)",
-      image: "https://media1.tenor.com/m/Z4w2f5T0M5YAAAAC/spongebob-pineapple.gif",
+      image: spongebobsHouseImg,
       icon: "🍍" 
     },
     { 
@@ -71,7 +76,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, The Flying Dutchman",
       hates: "Anyone who tries to clean it",
-      image: "https://media1.tenor.com/m/PZcK_W_kGjQAAAAC/patrick-house-spongebob.gif",
+      image: patricksHouseImg,
       icon: "🪨" 
     },
     { 
@@ -82,7 +87,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "SpongeBob and Patrick (frequent intruders)",
       hates: "SpongeBob and Patrick",
-      image: "https://media1.tenor.com/m/tRhP0bln-z0AAAAC/easterisland.gif",
+      image: squidwardsHouseImg,
       icon: "🗿" 
     },
     { 

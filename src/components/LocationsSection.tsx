@@ -33,6 +33,8 @@ import saltySpitoonImg from "@/assets/locations/Salty_Spitoon.png";
 import squilliamMansionImg from "@/assets/locations/Squilliam_Mansion.png";
 import cemeteryImg from "@/assets/locations/Bikini_Bottom_Cemetery.png";
 import flyingDutchmanImg from "@/assets/locations/The_Flying_Dutchmans_Ship.png";
+import sandysTreehouseImg from "@/assets/locations/Sandys_Treehouse.png";
+
 
 
 const LocationsSection = () => {
@@ -159,6 +161,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (must wear water helmets)",
       hates: "Water leaks",
+      image: sandysTreehouseImg,
       icon: "🐿️" 
     },
     { 
@@ -364,6 +367,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Sandy Cheeks, SpongeBob (Assistant)",
       hates: "Anti-science fish, Karate rule-breakers",
+      image: sandysTreehouseImg,
       icon: "🧪" 
     },
     { 

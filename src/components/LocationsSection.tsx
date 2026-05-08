@@ -29,6 +29,12 @@ import spongebobsHouseImg from "@/assets/locations/SpongeBobs_House.png";
 import patricksHouseImg from "@/assets/locations/Patricks_House.png";
 import squidwardsHouseImg from "@/assets/locations/Squidwards_House.png";
 
+import saltySpitoonImg from "@/assets/locations/Salty_Spitoon.png";
+import squilliamMansionImg from "@/assets/locations/Squilliam_Mansion.png";
+import cemeteryImg from "@/assets/locations/Bikini_Bottom_Cemetery.png";
+import flyingDutchmanImg from "@/assets/locations/The_Flying_Dutchmans_Ship.png";
+
+
 const LocationsSection = () => {
   const { t } = useTranslation();
   const [selectedLocName, setSelectedLocName] = useState<string | null>(null);
@@ -153,7 +159,6 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (must wear water helmets)",
       hates: "Water leaks",
-      image: "https://media.tenor.com/ARjNixiiXZsAAAAC/peep-%C3%A1ine-rose-daly.gif",
       icon: "🐿️" 
     },
     { 
@@ -164,7 +169,6 @@ const LocationsSection = () => {
       rating: 3.5,
       visitors: "Strange bioluminescent creatures",
       hates: "Travelers who miss the bus",
-      image: "https://media.tenor.com/ts_UxTASGroAAAAC/cant-understand-your-accent-spongebob.gif",
       icon: "🪨" 
     },
     { 
@@ -285,7 +289,7 @@ const LocationsSection = () => {
       rating: 4, 
       visitors: "Reg, Muscle Fish, Tough guys", 
       hates: "Weenies", 
-      image: "https://media.tenor.com/YhjcGpvcQawAAAAC/spongebob-tough.gif",
+      image: saltySpitoonImg,
       icon: "💪" 
     },
     { 
@@ -307,7 +311,6 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Almost everyone in town",
       hates: "Plankton (competition), Health inspectors",
-      image: "https://media.tenor.com/VMlyjL1G6FUAAAAC/bell-building.gif",
       icon: "🥤" 
     },
     { 
@@ -351,7 +354,6 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "Bioluminescent angler fish",
       hates: "Those with claustrophobia",
-      image: "https://media.tenor.com/_ORGfopOTmUAAAAC/spongebob-spongebob-meme.gif",
       icon: "🌑" 
     },
     { 
@@ -362,7 +364,6 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Sandy Cheeks, SpongeBob (Assistant)",
       hates: "Anti-science fish, Karate rule-breakers",
-      image: "https://media.tenor.com/_ta3xTM3tMMAAAAC/looking-around-om-nom.gif",
       icon: "🧪" 
     },
     { 
@@ -373,7 +374,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "Squilliam Fancyson, The upper class",
       hates: "Squidward, Mr. Krabs (due to envy)",
-      image: "https://media.tenor.com/hUyJ8NHG-ZAAAAAC/spongebob-house-fancy.gif",
+      image: squilliamMansionImg,
       icon: "🏯" 
     },
     { 
@@ -384,7 +385,7 @@ const LocationsSection = () => {
       rating: 2,
       visitors: "The Flying Dutchman, Mourners, Ghost hunters",
       hates: "Those afraid of the dark",
-      image: "https://media.tenor.com/LUmisGkH2SQAAAAC/dance-happy.gif",
+      image: cemeteryImg,
       icon: "🪦" 
     },
     { 
@@ -406,7 +407,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "SpongeBob, Patrick (acting as crew), Ghosts",
       hates: "People who don't believe in him, Being 'sold' on eBay",
-      image: "https://media.tenor.com/vsWxP6J7yxoAAAAC/spongebob-flying-dutchman.gif",
+      image: flyingDutchmanImg,
       icon: "🏴‍☠️" 
     },
   ];

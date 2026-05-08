@@ -60,7 +60,7 @@ const LocationsSection = () => {
       rating: 5,
       visitors: "Patrick, Squidward (unwillingly), Sandy",
       hates: "Squidward (when it gets too loud)",
-      image: "https://media.tenor.com/Z4w2f5T0M5YAAAAC/spongebob-pineapple.gif",
+      image: "https://media1.tenor.com/m/Z4w2f5T0M5YAAAAC/spongebob-pineapple.gif",
       icon: "🍍" 
     },
     { 
@@ -71,7 +71,7 @@ const LocationsSection = () => {
       rating: 4,
       visitors: "SpongeBob, The Flying Dutchman",
       hates: "Anyone who tries to clean it",
-      image: "https://media.tenor.com/PZcK_W_kGjQAAAAC/patrick-house-spongebob.gif",
+      image: "https://media1.tenor.com/m/PZcK_W_kGjQAAAAC/patrick-house-spongebob.gif",
       icon: "🪨" 
     },
     { 
@@ -82,7 +82,7 @@ const LocationsSection = () => {
       rating: 4.5,
       visitors: "SpongeBob and Patrick (frequent intruders)",
       hates: "SpongeBob and Patrick",
-      image: "https://media.tenor.com/tRhP0bln-z0AAAAC/easterisland.gif",
+      image: "https://media1.tenor.com/m/tRhP0bln-z0AAAAC/easterisland.gif",
       icon: "🗿" 
     },
     { 

@@ -24,6 +24,8 @@ import kelpForestImg from "@/assets/locations/Kelp_Forest.png";
 import coralForestImg from "@/assets/locations/Brain_Coral_Fields.png";
 import trenchImg from "@/assets/locations/The_Trench.png";
 import oldManJenkinsImg from "@/assets/locations/Old_Man_Jenkins_house.png";
+import { playBubblePop } from "@/utils/audio";
+
 
 import spongebobsHouseImg from "@/assets/locations/SpongeBobs_House.png";
 import patricksHouseImg from "@/assets/locations/Patricks_House.png";
@@ -436,7 +438,10 @@ const LocationsSection = () => {
         {selectedLoc ? (
           <div className="animate-fade-in-up">
             <button
-              onClick={() => setSelectedLocName(null)}
+              onClick={() => {
+                setSelectedLocName(null);
+                playBubblePop();
+              }}
               className="flex items-center gap-2 mb-6 px-4 py-2 rounded-xl bg-white/70 hover:bg-white/90 text-ocean-deep font-display text-sm transition-all shadow-sm border-2 border-primary"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -522,7 +527,10 @@ const LocationsSection = () => {
               {locations.map((loc) => (
                 <button
                   key={loc.name}
-                  onClick={() => setSelectedLocName(loc.name)}
+                  onClick={() => {
+                    setSelectedLocName(loc.name);
+                    playBubblePop();
+                  }}
                   className="text-left w-full flex flex-col items-center justify-center gap-3 rounded-xl bg-white/70 hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 p-6 border-2 border-primary/40 shadow-sm hover:shadow-md hover:border-primary"
                 >
                   <div className="w-24 h-24 mb-2 hover:scale-110 transition-transform flex items-center justify-center">

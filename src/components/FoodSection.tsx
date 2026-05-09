@@ -3,6 +3,7 @@ import { ArrowLeft, Star, StarHalf } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import foodBg from "@/assets/new-food-bg.jpg";
 import realWorldBurger from "@/assets/burger-king-style.png";
+import { playBubblePop } from "@/utils/audio";
 
 const foodImages = import.meta.glob<{ default: string }>('@/assets/food/*.png', { eager: true });
 
@@ -148,7 +149,10 @@ const FoodSection = () => {
         {selectedFood ? (
           <div className="animate-fade-in-up">
             <button
-              onClick={() => setSelectedFoodName(null)}
+              onClick={() => {
+                setSelectedFoodName(null);
+                playBubblePop();
+              }}
               className="flex items-center gap-2 mb-6 px-4 py-2 rounded-xl bg-white/70 hover:bg-white/90 text-ocean-deep font-display text-sm transition-all shadow-sm border-2 border-primary"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -233,7 +237,10 @@ const FoodSection = () => {
               {foodItems.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => setSelectedFoodName(item.name)}
+                  onClick={() => {
+                    setSelectedFoodName(item.name);
+                    playBubblePop();
+                  }}
                   className="text-left w-full flex flex-col items-center justify-center gap-3 rounded-xl bg-white/70 hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 p-6 border-2 border-primary/40 shadow-sm hover:shadow-md hover:border-primary"
                 >
                   

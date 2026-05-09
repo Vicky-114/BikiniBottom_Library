@@ -10,6 +10,7 @@ import puffImg from "@/assets/puff.png";
 import larryImg from "@/assets/larry.png";
 import karenImg from "@/assets/karen.png";
 import neptuneImg from "@/assets/neptune.png";
+import { playBubblePop, playMeow, playCoin } from "@/utils/audio";
 
 const CharactersSection = () => {
   const { t } = useTranslation();
@@ -866,6 +867,19 @@ const CharactersSection = () => {
     return relatedList.some(c => c?.name === targetName);
   };
 
+  const handleCharacterClick = (name: string) => {
+    setSelectedCharName(name);
+    
+    // Easter Eggs!
+    if (name.includes("Gary")) {
+      playMeow();
+    } else if (name.includes("Mr. Krabs")) {
+      playCoin();
+    } else {
+      playBubblePop();
+    }
+  };
+
   return (
     <>
       {/* Fixed Full-Screen Background */}
@@ -885,7 +899,10 @@ const CharactersSection = () => {
         {selectedChar ? (
           <div className="animate-fade-in-up">
             <button
-              onClick={() => setSelectedCharName(null)}
+              onClick={() => {
+                setSelectedCharName(null);
+                playBubblePop();
+              }}
               className="flex items-center gap-2 mb-6 px-4 py-2 rounded-xl bg-white/70 hover:bg-white/90 text-ocean-deep font-display text-sm transition-all shadow-sm border-2 border-primary"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -1015,7 +1032,7 @@ const CharactersSection = () => {
                 return (
                   <button
                     key={char.name}
-                    onClick={() => setSelectedCharName(char.name)}
+                    onClick={() => handleCharacterClick(char.name)}
                     onMouseEnter={() => setHoveredChar(char.name)}
                     onMouseLeave={() => setHoveredChar(null)}
                     className={`relative flex flex-col items-center group focus:outline-none transition-all duration-500 ${

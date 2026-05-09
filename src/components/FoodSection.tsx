@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import foodBg from "@/assets/new-food-bg.jpg";
 import realWorldBurger from "@/assets/burger-king-style.png";
 
+const foodImages = import.meta.glob<{ default: string }>('@/assets/food/*.png', { eager: true });
+
 const FoodSection = () => {
   const { t } = useTranslation();
   const [selectedFoodName, setSelectedFoodName] = useState<string | null>(null);
@@ -28,7 +30,6 @@ const FoodSection = () => {
       description: "The most famous food in the ocean. Legendary for its secret formula and incredible taste.", 
       ingredients: ["Krabby Patty Bun", "Krabby Patty", "Lettuce", "Cheese", "Onions", "Tomatoes", "Pickles", "Ketchup", "Mustard", "Secret Formula"],
       restaurant: "The Krusty Krab", 
-      image: "https://media.tenor.com/5xE4ZLY1nQIAAAAC/127hater-spongebob.gif", 
       rating: 10, 
       maxRating: 10, 
       whoLikes: "Everyone, especially SpongeBob and Plankton (his obsession)", 
@@ -39,7 +40,6 @@ const FoodSection = () => {
       description: "A premium version of the classic Krabby Patty with extra toppings and a fluffier bun.", 
       ingredients: ["Premium Brioche Bun", "Double Krabby Patty", "Aged Sea-Cheese", "Caramelized Sea-Onions", "Heirloom Sea-Tomatoes"],
       restaurant: "The Krusty Krab", 
-      image: "https://media.tenor.com/wmNOWKlEQBgAAAAC/burger-king-mushroom-and-swiss-whopper.gif", 
       rating: 9, 
       maxRating: 10, 
       whoLikes: "Gourmet food lovers" 
@@ -49,7 +49,6 @@ const FoodSection = () => {
       description: "A highly addictive, neon-green beverage that temporarily took Bikini Bottom by storm.", 
       ingredients: ["99% Kelp Juice", "1% Secret Addictive Substance", "Green Glow-Agent"],
       restaurant: "Kelp Shake Stores", 
-      image: "https://media.tenor.com/rkp2-wryhpIAAAAC/spongebob-squarepants-bathroom.gif", 
       rating: 4.5, 
       maxRating: 5, 
       whoLikes: "Addictive juice fans",
@@ -60,7 +59,6 @@ const FoodSection = () => {
       description: "Plankton's desperate attempt to replicate the Krabby Patty using his family's 'delicious' chum.", 
       ingredients: ["Cold Chum", "Soggy Bun", "Grease", "Regret"],
       restaurant: "The Chum Bucket", 
-      image: "https://media.tenor.com/7ZN-Ml0lhRQAAAAC/smoothies-simplybakings.gif", 
       rating: 0.5, 
       maxRating: 5, 
       whoLikes: "Karen (out of obligation)",
@@ -71,60 +69,65 @@ const FoodSection = () => {
       description: "The most cheerful dessert in the ocean, served by the Goofy Goober himself.", 
       ingredients: ["Sea-Cream", "Sugar", "Happiness", "Berry Swirls"],
       restaurant: "Goofy Goober's", 
-      image: "https://media.tenor.com/CWzRIF9qwxIAAAAC/bliss-happy.gif", 
       rating: 5, 
       maxRating: 5, 
       whoLikes: "SpongeBob and Patrick",
       realWorld: { name: "Disney World Dole Whip", image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80", description: "Captures the same whimsical, child-like joy as specialized theme park treats!" }
     },
-    { name: "Double Krabby Patty", description: "Two juicy patties for double the satisfaction.", ingredients: ["Double Patties", "Extra Cheese", "Classic Toppings"], restaurant: "The Krusty Krab", image: "https://media.tenor.com/L2i42PiVwkMAAAAC/dole-whip.gif", rating: 9.5, maxRating: 10, whoLikes: "Patrick Star" },
-    { name: "Triple Krabby Patty", description: "Three patties piled high. A serious challenge.", ingredients: ["Triple Patties", "Massive Bun", "All the Toppings"], restaurant: "The Krusty Krab", image: "https://media.tenor.com/Vrm9qoyRQKcAAAAC/spongebob-spongebob-squarepants.gif", rating: 10, maxRating: 10, whoLikes: "Extremely hungry customers" },
-    { name: "Krabby Patty with Cheese", description: "The classic patty topped with perfectly melted undersea cheese.", ingredients: ["Krabby Patty", "Sea-Cheese", "Classic Toppings"], restaurant: "The Krusty Krab", image: "https://media.tenor.com/Fd6D0oSuoBoAAAAC/heart-hamburger.gif", rating: 9, maxRating: 10, whoLikes: "Classic burger fans" },
-    { name: "Pretty Patty", description: "SpongeBob's colorful invention that comes in various vibrant shades.", ingredients: ["Food Coloring", "Optimism", "Classic Krabby Ingredients"], restaurant: "Pretty Patties (formerly)", image: "https://media.tenor.com/6aBApjyfpScAAAAC/comida.gif", rating: 4.5, maxRating: 5, whoLikes: "Fashion-forward fish" },
-    { name: "Kelp Fries", description: "The standard crispy side dish. Perfectly salted.", ingredients: ["Fresh Kelp Stripes", "Sea Salt", "Deep Sea Oil"], restaurant: "The Krusty Krab", image: "https://media.tenor.com/CdO15wPUs5YAAAAC/crave-fry.gif", rating: 4.5, maxRating: 5, whoLikes: "Almost everyone" },
-    { name: "Coral Bits", description: "Small, crunchy bits of fried coral. The ultimate undersea snack.", ingredients: ["Shaved Coral", "Spices", "Deep-Fried"], restaurant: "The Krusty Krab", image: "https://media.tenor.com/-A4A3uznB6gAAAAC/spongebob-band-geeks.gif", rating: 4, maxRating: 5, whoLikes: "Pearl Krabs" },
-    { name: "Goofy Goober Sundae", description: "A massive bowl of ice cream with all the toppings.", ingredients: ["Multiple Scoops", "Sprinkles", "Whipped Sea-Cream", "Cherry"], restaurant: "Goofy Goober's", image: "https://media.tenor.com/CPl5GJhPw1gAAAAC/ice-cream-spongebob.gif", rating: 5, maxRating: 5, whoLikes: "Goofy Goober fans" },
-    { name: "Triple Gooberberry Sunrise", description: "The legendary, massive sundae that fuels wild nights.", ingredients: ["Gooberberries", "Sunrise Syrup", "Magic", "A Lot of Ice Cream"], restaurant: "Goofy Goober's", image: "https://media.tenor.com/CPl5GJhPw1gAAAAC/ice-cream-spongebob.gif", rating: 5, maxRating: 5, whoLikes: "SpongeBob and Patrick after a long day" },
-    { name: "Kelp Nougat Crunch", description: "The best-selling candy bar in Bikini Bottom.", ingredients: ["Kelp Nougat", "Chocolate Shell", "Crunchy Bits"], restaurant: "Barg'N-Mart", image: "https://media.tenor.com/iW8M5YDhKzsAAAAC/bliss-happy.gif", rating: 4.5, maxRating: 5, whoLikes: "SpongeBob" },
-    { name: "Jellyfish Jelly Sandwich", description: "Two slices of kelp bread with a thick layer of jellyfish jelly.", ingredients: ["Kelp Bread", "Fresh Jellyfish Jelly"], restaurant: "Picnics", image: "https://media.tenor.com/AhrTQ-632A4AAAAC/sml-mario.gif", rating: 5, maxRating: 5, whoLikes: "SpongeBob" },
-    { name: "Colored Krabby Patty", description: "Vibrant iterations of the classic patty, each with a unique visual flair.", restaurant: "The Krusty Krab", image: "https://media.tenor.com/Jno3Vz1c9a4AAAAC/wendys-the-krabby-patty-kollab.gif", rating: 4, maxRating: 5, whoLikes: "Kids and experimental eaters" },
-    { name: "Krabby Meal", description: "A balanced meal for the younger residents of Bikini Bottom, complete with a toy (usually a spatula).", restaurant: "The Krusty Krab", image: "https://media.tenor.com/rsaWCtDsXcwAAAAC/spongebob-spongebob-squarepants.gif", rating: 3.5, maxRating: 5, whoLikes: "Bikini Bottom children" },
-    { name: "Chum Stick", description: "Chum served on a stick for eating on the go. Tastes exactly like it sounds.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/BjnV0zXcJ48AAAAC/food-processing-foodie.gif", rating: 0.5, maxRating: 5, whoLikes: "Bikini Bottom residents with no taste buds" },
-    { name: "Chum Shake", description: "A thick, grey beverage made entirely of chum. It once became a brief sensation due to its addictive properties.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/Piz13EALWZQAAAAC/mr-krabs-chum-bucket.gif", rating: 1, maxRating: 5, whoLikes: "Brainwashed customers" },
-    { name: "Chum Pie", description: "A flaky crust filled with lukewarm, seasoned chum. A 'delicacy' according to Plankton.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/GwU2QvmrJ5AAAAAC/spongebob-squarepants-patrick-star.gif", rating: 0.5, maxRating: 5, whoLikes: "Plankton" },
-    { name: "Chum Chili", description: "Spicy chum served in a bowl. It's hot, but definitely not appetizing.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/Z09Pa5LzZA0AAAAC/spongebob-spongebob-meme.gif", rating: 0.5, maxRating: 5, whoLikes: "Plankton's relatives" },
-    { name: "Chum Nuggets", description: "Bite-sized pieces of deep-fried chum. Often used in baiting traps.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/xSGN7IbMYH4AAAAC/mcdo.gif", rating: 0.5, maxRating: 5, whoLikes: "Nobody really" },
-    { name: "Chum Sundae", description: "The low point of culinary history. Chum topped with more chum.", restaurant: "The Chum Bucket", image: "https://media.tenor.com/CPl5GJhPw1gAAAAC/ice-cream-spongebob.gif", rating: 0, maxRating: 5, whoLikes: "Plankton when he's feeling experimental" },
-    { name: "Peanut Parfait", description: "A nutty and sweet layered treat. Keep an eye out for any giant peanuts!", restaurant: "Goofy Goober's", image: "https://media.tenor.com/DX3_BLCed9kAAAAC/smacking-peanut-butter-sandwich-kelsey.gif", rating: 4.5, maxRating: 5, whoLikes: "Patrick" },
-    { name: "Seaweed Snacks", description: "Thin, crispy leaves of seaweed. A healthy and light option for the health-conscious fish.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/nIWNASs7t7MAAAAC/tv-comedy.gif", rating: 3.5, maxRating: 5, whoLikes: "Sandy Cheeks" },
-    { name: "Barnacle Chips", description: "Salty and satisfying chips made from ground barnacles. They are a staple of any Bikini Bottom movie night.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/nIWNASs7t7MAAAAC/tv-comedy.gif", rating: 4, maxRating: 5, whoLikes: "Moviegoers" },
-    { name: "Kelp Chips", description: "The underwater equivalent of potato chips. Crunchy, salty, and highly addictive.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/nIWNASs7t7MAAAAC/tv-comedy.gif", rating: 4, maxRating: 5, whoLikes: "Everyone" },
-    { name: "Jelly Patty", description: "A Krabby Patty topped with fresh, blue jellyfish jelly. A sweet and savory masterpiece.", restaurant: "The Krusty Krab", image: "https://media.tenor.com/6aBApjyfpScAAAAC/comida.gif", rating: 5, maxRating: 5, whoLikes: "SpongeBob" },
-    { name: "Sea Nut Brittle", description: "A hard, sweet candy filled with crunchy sea nuts. Perfect for those who enjoy a bit of a challenge.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/CWzRIF9qwxIAAAAC/bliss-happy.gif", rating: 3.5, maxRating: 5, whoLikes: "Grandma SquarePants" },
-    { name: "Seafoam Soda Crackers", description: "Light and airy crackers that pair perfectly with a nice bowl of kelp soup.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/IXUHNSw9Z7sAAAAC/spongebob-squarepants-crackers.gif", rating: 3, maxRating: 5, whoLikes: "Squidward" },
-    { name: "Seafoam Soda", description: "A fizzy, refreshing drink that tickles the gills.", restaurant: "Various", image: "https://media.tenor.com/_7SInq6ghnYAAAAC/angrydynomites-angry-dynomites-lab.gif", rating: 4, maxRating: 5, whoLikes: "The whole town" },
-    { name: "Kelp Juice", description: "100% pure squeezed kelp. Rich in nutrients and sea minerals.", restaurant: "Healthy Life", image: "https://media.tenor.com/QwoTTwCt_aUAAAAC/spongebob-kelp-juice.gif", rating: 3.5, maxRating: 5, whoLikes: "Sandy" },
-    { name: "Kelp Soda", description: "The carbonated version of kelp juice. A bit punchy!", restaurant: "Various", image: "https://media.tenor.com/n_jeSYLWWJMAAAAC/spongebob-spongebob-meme.gif", rating: 3.5, maxRating: 5, whoLikes: "Teenagers" },
-    { name: "Kelp Smoothie", description: "Blended kelp with sea-fruit. Thick and refreshing.", restaurant: "Smoothee King", image: "https://media.tenor.com/udqhIuECsdcAAAAC/spongebob-spongebob-squarepants.gif", rating: 4, maxRating: 5, whoLikes: "Exercise enthusiasts" },
-    { name: "Coral Cola", description: "The classic dark soda of the deep sea. Bubbles for days!", restaurant: "The Krusty Krab", image: "https://media.tenor.com/GwU2QvmrJ5AAAAAC/spongebob-squarepants-patrick-star.gif", rating: 4, maxRating: 5, whoLikes: "All ages" },
-    { name: "Root Kelp", description: "A robust, earthy beverage often served in frozen mugs.", restaurant: "Cranky’s", image: "https://media.tenor.com/2HJiPz3baqYAAAAC/breakfast-cereal.gif", rating: 4, maxRating: 5, whoLikes: "Older fish" },
-    { name: "Goo Lagoon Ice Cream", description: "Soft-serve ice cream inspired by the colorful brine of the lagoon.", restaurant: "Beachside Stands", image: "https://media.tenor.com/kjY81a6ZAesAAAAC/icecream-ice-cream.gif", rating: 4.5, maxRating: 5, whoLikes: "Surfers" },
-    { name: "Sand Sundae", description: "A textured sundae that Patrick seems to find incredibly delicious, even if others find it a bit... gritty.", restaurant: "Under a Rock", image: "https://media.tenor.com/grQ3m4G5hfwAAAAC/anime-food-anime.gif", rating: 2, maxRating: 5, whoLikes: "Patrick" },
-    { name: "Seafoam Popsicle", description: "Frozen seafoam in various fruit flavors. A summer favorite.", restaurant: "Ice Cream Trucks", image: "https://media.tenor.com/YHN4_v-NRjYAAAAC/spongebob-meme.gif", rating: 4, maxRating: 5, whoLikes: "Kids" },
-    { name: "Kelp Pops", description: "Sweet kelp-syrup frozen on a stick.", restaurant: "Mrs. Puff's Snack Stand", image: "https://media.tenor.com/tuvzXIYLrb0AAAAC/spongebob-mr-krabs.gif", rating: 3.5, maxRating: 5, whoLikes: "Boating school students" },
-    { name: "Kelp Pancakes", description: "Fluffy pancakes made with ground kelp flour. Best served with jellyfish jelly.", restaurant: "SpongeBob's Kitchen", image: "https://media.tenor.com/w-6tqbgUGuoAAAAC/pancakes-blueberry-pancakes.gif", rating: 5, maxRating: 5, whoLikes: "SpongeBob and his parents" },
-    { name: "Sea Waffles", description: "Crispy waffles with deep pockets for holding sea-syrup.", restaurant: "The Breakfast Nook", image: "https://media.tenor.com/iY7HK4I4DIQAAAAC/waffledaygifs-waffles.gif", rating: 4.5, maxRating: 5, whoLikes: "Breakfast lovers" },
-    { name: "Kelp Toast", description: "Perfectly browned kelp bread. A simple start to the day.", restaurant: "Various", image: "https://media.tenor.com/uvmhPps17VcAAAAC/pingu-breakfast.gif", rating: 3, maxRating: 5, whoLikes: "Squidward" },
-    { name: "Sea Egg Omelet", description: "A fluffy omelet made with the finest sea eggs and sautéed kelp.", restaurant: "The Krusty Krab", image: "https://media.tenor.com/IewOSXsWHfgAAAAC/omurice-omelette.gif", rating: 4, maxRating: 5, whoLikes: "Mr. Krabs" },
-    { name: "Barnacle Cereal", description: "A crunchy cereal that makes your milk turn sea-green.", restaurant: "Barg'N-Mart", image: "https://media.tenor.com/ZxEdoFmG3xsAAAAC/spongebob-squarepants-eating-food.gif", rating: 3.5, maxRating: 5, whoLikes: "SpongeBob" },
-    { name: "Pretty Patties", description: "The collective group of vibrant patties that defined a generation of undersea fashion food.", restaurant: "SpongeBob’s Stand", image: "https://media.tenor.com/ciHNfvXhdZ8AAAAC/spongebob-patrick-star.gif", rating: 5, maxRating: 5, whoLikes: "The whole city" },
-    { name: "Coral Cake", description: "A celebratory cake with layers of sponge and sea-cream frosting.", restaurant: "Birthday Parties", image: "https://media.tenor.com/JTTGpD0FM5EAAAAC/spongebob-spongebob-squarepants.gif", rating: 4.5, maxRating: 5, whoLikes: "Pearl Krabs" },
-    { name: "Sea Cupcakes", description: "Individual portions of joy with colorful coral decorations.", restaurant: "Bake Sales", image: "https://media.tenor.com/ag0dZdnEgC4AAAAC/cupcakes-dessert.gif", rating: 4, maxRating: 5, whoLikes: "SpongeBob's friends" },
-    { name: "Jellyfish Jelly", description: "The sweet, neon-blue nectar extracted from wild jellyfish. Best when spread on everything!", restaurant: "Nature", image: "https://media.tenor.com/pgWIphK7iIsAAAAC/kinzoo-external-sponge-bob1.gif", rating: 5, maxRating: 5, whoLikes: "Jellyfishing enthusiasts" },
-    { name: "Krabby Dog", description: "The Krusty Krab's foray into the hot dog market. It's basically a Krabby Patty in a different shape.", restaurant: "The Krusty Krab", image: "https://media.tenor.com/bhthUlI8IbAAAAAC/spongebob-eating.gif", rating: 3.5, maxRating: 5, whoLikes: "Tourists" },
+    { name: "Double Krabby Patty", description: "Two juicy patties for double the satisfaction.", ingredients: ["Double Patties", "Extra Cheese", "Classic Toppings"], restaurant: "The Krusty Krab", rating: 9.5, maxRating: 10, whoLikes: "Patrick Star" },
+    { name: "Triple Krabby Patty", description: "Three patties piled high. A serious challenge.", ingredients: ["Triple Patties", "Massive Bun", "All the Toppings"], restaurant: "The Krusty Krab", rating: 10, maxRating: 10, whoLikes: "Extremely hungry customers" },
+    { name: "Krabby Patty with Cheese", description: "The classic patty topped with perfectly melted undersea cheese.", ingredients: ["Krabby Patty", "Sea-Cheese", "Classic Toppings"], restaurant: "The Krusty Krab", rating: 9, maxRating: 10, whoLikes: "Classic burger fans" },
+    { name: "Pretty Patty", description: "SpongeBob's colorful invention that comes in various vibrant shades.", ingredients: ["Food Coloring", "Optimism", "Classic Krabby Ingredients"], restaurant: "Pretty Patties (formerly)", rating: 4.5, maxRating: 5, whoLikes: "Fashion-forward fish" },
+    { name: "Kelp Fries", description: "The standard crispy side dish. Perfectly salted.", ingredients: ["Fresh Kelp Stripes", "Sea Salt", "Deep Sea Oil"], restaurant: "The Krusty Krab", rating: 4.5, maxRating: 5, whoLikes: "Almost everyone" },
+    { name: "Coral Bits", description: "Small, crunchy bits of fried coral. The ultimate undersea snack.", ingredients: ["Shaved Coral", "Spices", "Deep-Fried"], restaurant: "The Krusty Krab", rating: 4, maxRating: 5, whoLikes: "Pearl Krabs" },
+    { name: "Goofy Goober Sundae", description: "A massive bowl of ice cream with all the toppings.", ingredients: ["Multiple Scoops", "Sprinkles", "Whipped Sea-Cream", "Cherry"], restaurant: "Goofy Goober's", rating: 5, maxRating: 5, whoLikes: "Goofy Goober fans" },
+    { name: "Triple Gooberberry Sunrise", description: "The legendary, massive sundae that fuels wild nights.", ingredients: ["Gooberberries", "Sunrise Syrup", "Magic", "A Lot of Ice Cream"], restaurant: "Goofy Goober's", rating: 5, maxRating: 5, whoLikes: "SpongeBob and Patrick after a long day" },
+    { name: "Kelp Nougat Crunch", description: "The best-selling candy bar in Bikini Bottom.", ingredients: ["Kelp Nougat", "Chocolate Shell", "Crunchy Bits"], restaurant: "Barg'N-Mart", rating: 4.5, maxRating: 5, whoLikes: "SpongeBob" },
+    { name: "Jellyfish Jelly Sandwich", description: "Two slices of kelp bread with a thick layer of jellyfish jelly.", ingredients: ["Kelp Bread", "Fresh Jellyfish Jelly"], restaurant: "Picnics", rating: 5, maxRating: 5, whoLikes: "SpongeBob" },
+    { name: "Colored Krabby Patty", description: "Vibrant iterations of the classic patty, each with a unique visual flair.", restaurant: "The Krusty Krab", rating: 4, maxRating: 5, whoLikes: "Kids and experimental eaters" },
+    { name: "Krabby Meal", description: "A balanced meal for the younger residents of Bikini Bottom, complete with a toy (usually a spatula).", restaurant: "The Krusty Krab", rating: 3.5, maxRating: 5, whoLikes: "Bikini Bottom children" },
+    { name: "Chum Stick", description: "Chum served on a stick for eating on the go. Tastes exactly like it sounds.", restaurant: "The Chum Bucket", rating: 0.5, maxRating: 5, whoLikes: "Bikini Bottom residents with no taste buds" },
+    { name: "Chum Shake", description: "A thick, grey beverage made entirely of chum. It once became a brief sensation due to its addictive properties.", restaurant: "The Chum Bucket", rating: 1, maxRating: 5, whoLikes: "Brainwashed customers" },
+    { name: "Chum Pie", description: "A flaky crust filled with lukewarm, seasoned chum. A 'delicacy' according to Plankton.", restaurant: "The Chum Bucket", rating: 0.5, maxRating: 5, whoLikes: "Plankton" },
+    { name: "Chum Chili", description: "Spicy chum served in a bowl. It's hot, but definitely not appetizing.", restaurant: "The Chum Bucket", rating: 0.5, maxRating: 5, whoLikes: "Plankton's relatives" },
+    { name: "Chum Nuggets", description: "Bite-sized pieces of deep-fried chum. Often used in baiting traps.", restaurant: "The Chum Bucket", rating: 0.5, maxRating: 5, whoLikes: "Nobody really" },
+    { name: "Chum Sundae", description: "The low point of culinary history. Chum topped with more chum.", restaurant: "The Chum Bucket", rating: 0, maxRating: 5, whoLikes: "Plankton when he's feeling experimental" },
+    { name: "Peanut Parfait", description: "A nutty and sweet layered treat. Keep an eye out for any giant peanuts!", restaurant: "Goofy Goober's", rating: 4.5, maxRating: 5, whoLikes: "Patrick" },
+    { name: "Seaweed Snacks", description: "Thin, crispy leaves of seaweed. A healthy and light option for the health-conscious fish.", restaurant: "Barg'N-Mart", rating: 3.5, maxRating: 5, whoLikes: "Sandy Cheeks" },
+    { name: "Barnacle Chips", description: "Salty and satisfying chips made from ground barnacles. They are a staple of any Bikini Bottom movie night.", restaurant: "Barg'N-Mart", rating: 4, maxRating: 5, whoLikes: "Moviegoers" },
+    { name: "Kelp Chips", description: "The underwater equivalent of potato chips. Crunchy, salty, and highly addictive.", restaurant: "Barg'N-Mart", rating: 4, maxRating: 5, whoLikes: "Everyone" },
+    { name: "Jelly Patty", description: "A Krabby Patty topped with fresh, blue jellyfish jelly. A sweet and savory masterpiece.", restaurant: "The Krusty Krab", rating: 5, maxRating: 5, whoLikes: "SpongeBob" },
+    { name: "Sea Nut Brittle", description: "A hard, sweet candy filled with crunchy sea nuts. Perfect for those who enjoy a bit of a challenge.", restaurant: "Barg'N-Mart", rating: 3.5, maxRating: 5, whoLikes: "Grandma SquarePants" },
+    { name: "Seafoam Soda Crackers", description: "Light and airy crackers that pair perfectly with a nice bowl of kelp soup.", restaurant: "Barg'N-Mart", rating: 3, maxRating: 5, whoLikes: "Squidward" },
+    { name: "Seafoam Soda", description: "A fizzy, refreshing drink that tickles the gills.", restaurant: "Various", rating: 4, maxRating: 5, whoLikes: "The whole town" },
+    { name: "Kelp Juice", description: "100% pure squeezed kelp. Rich in nutrients and sea minerals.", restaurant: "Healthy Life", rating: 3.5, maxRating: 5, whoLikes: "Sandy" },
+    { name: "Kelp Soda", description: "The carbonated version of kelp juice. A bit punchy!", restaurant: "Various", rating: 3.5, maxRating: 5, whoLikes: "Teenagers" },
+    { name: "Kelp Smoothie", description: "Blended kelp with sea-fruit. Thick and refreshing.", restaurant: "Smoothee King", rating: 4, maxRating: 5, whoLikes: "Exercise enthusiasts" },
+    { name: "Coral Cola", description: "The classic dark soda of the deep sea. Bubbles for days!", restaurant: "The Krusty Krab", rating: 4, maxRating: 5, whoLikes: "All ages" },
+    { name: "Root Kelp", description: "A robust, earthy beverage often served in frozen mugs.", restaurant: "Cranky’s", rating: 4, maxRating: 5, whoLikes: "Older fish" },
+    { name: "Goo Lagoon Ice Cream", description: "Soft-serve ice cream inspired by the colorful brine of the lagoon.", restaurant: "Beachside Stands", rating: 4.5, maxRating: 5, whoLikes: "Surfers" },
+    { name: "Sand Sundae", description: "A textured sundae that Patrick seems to find incredibly delicious, even if others find it a bit... gritty.", restaurant: "Under a Rock", rating: 2, maxRating: 5, whoLikes: "Patrick" },
+    { name: "Seafoam Popsicle", description: "Frozen seafoam in various fruit flavors. A summer favorite.", restaurant: "Ice Cream Trucks", rating: 4, maxRating: 5, whoLikes: "Kids" },
+    { name: "Kelp Pops", description: "Sweet kelp-syrup frozen on a stick.", restaurant: "Mrs. Puff's Snack Stand", rating: 3.5, maxRating: 5, whoLikes: "Boating school students" },
+    { name: "Kelp Pancakes", description: "Fluffy pancakes made with ground kelp flour. Best served with jellyfish jelly.", restaurant: "SpongeBob's Kitchen", rating: 5, maxRating: 5, whoLikes: "SpongeBob and his parents" },
+    { name: "Sea Waffles", description: "Crispy waffles with deep pockets for holding sea-syrup.", restaurant: "The Breakfast Nook", rating: 4.5, maxRating: 5, whoLikes: "Breakfast lovers" },
+    { name: "Kelp Toast", description: "Perfectly browned kelp bread. A simple start to the day.", restaurant: "Various", rating: 3, maxRating: 5, whoLikes: "Squidward" },
+    { name: "Sea Egg Omelet", description: "A fluffy omelet made with the finest sea eggs and sautéed kelp.", restaurant: "The Krusty Krab", rating: 4, maxRating: 5, whoLikes: "Mr. Krabs" },
+    { name: "Barnacle Cereal", description: "A crunchy cereal that makes your milk turn sea-green.", restaurant: "Barg'N-Mart", rating: 3.5, maxRating: 5, whoLikes: "SpongeBob" },
+    { name: "Pretty Patties", description: "The collective group of vibrant patties that defined a generation of undersea fashion food.", restaurant: "SpongeBob’s Stand", rating: 5, maxRating: 5, whoLikes: "The whole city" },
+    { name: "Coral Cake", description: "A celebratory cake with layers of sponge and sea-cream frosting.", restaurant: "Birthday Parties", rating: 4.5, maxRating: 5, whoLikes: "Pearl Krabs" },
+    { name: "Sea Cupcakes", description: "Individual portions of joy with colorful coral decorations.", restaurant: "Bake Sales", rating: 4, maxRating: 5, whoLikes: "SpongeBob's friends" },
+    { name: "Jellyfish Jelly", description: "The sweet, neon-blue nectar extracted from wild jellyfish. Best when spread on everything!", restaurant: "Nature", rating: 5, maxRating: 5, whoLikes: "Jellyfishing enthusiasts" },
+    { name: "Krabby Dog", description: "The Krusty Krab's foray into the hot dog market. It's basically a Krabby Patty in a different shape.", restaurant: "The Krusty Krab", rating: 3.5, maxRating: 5, whoLikes: "Tourists" },
   ];
 
-  const selectedFood = foodItems.find((f) => f.name === selectedFoodName);
+  
+  const selectedFoodBase = foodItems.find((f) => f.name === selectedFoodName);
+  const selectedFood = selectedFoodBase ? {
+    ...selectedFoodBase,
+    image: foodImages[`/src/assets/food/${selectedFoodBase.name.replace(/ /g, '_')}.png`]?.default
+  } : null;
+
 
   return (
     <>
@@ -153,7 +156,13 @@ const FoodSection = () => {
             </button>
             <div className="rounded-2xl bg-white/80 p-5 md:p-8 border-2 border-primary/50 shadow-lg">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-6 text-center md:text-left">
-                <span className="text-6xl md:text-7xl drop-shadow-md">{selectedFood.icon}</span>
+                
+                {selectedFood.image ? (
+                  <img src={selectedFood.image} alt={selectedFood.name} className="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-lg" />
+                ) : (
+                  <span className="text-6xl md:text-7xl drop-shadow-md">🍽️</span>
+                )}
+
                 <div className="flex-1 w-full">
                   <div className="flex flex-col md:flex-row items-center md:items-start gap-3 mb-2">
                     <h3 className="font-display text-2xl md:text-3xl text-ocean-deep leading-tight">{selectedFood.name}</h3>
@@ -227,7 +236,15 @@ const FoodSection = () => {
                   onClick={() => setSelectedFoodName(item.name)}
                   className="text-left w-full flex flex-col items-center justify-center gap-3 rounded-xl bg-white/70 hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 p-6 border-2 border-primary/40 shadow-sm hover:shadow-md hover:border-primary"
                 >
-                  <div className="text-5xl drop-shadow-sm mb-1 hover:scale-110 transition-transform">{item.icon}</div>
+                  
+                  <div className="w-20 h-20 md:w-24 md:h-24 mb-2 hover:scale-110 transition-transform flex items-center justify-center">
+                    {foodImages[`/src/assets/food/${item.name.replace(/ /g, '_')}.png`]?.default ? (
+                      <img src={foodImages[`/src/assets/food/${item.name.replace(/ /g, '_')}.png`].default} alt={item.name} className="w-full h-full object-contain drop-shadow-md" />
+                    ) : (
+                      <div className="text-5xl drop-shadow-sm mb-1">🍽️</div>
+                    )}
+                  </div>
+
                   <h3 className="font-display text-lg text-ocean-deep leading-tight text-center">{item.name}</h3>
                   <div className="flex flex-col items-center gap-1">
                     {starRating(item.rating, item.maxRating || 5)}
